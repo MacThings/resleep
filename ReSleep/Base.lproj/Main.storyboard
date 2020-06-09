@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
+        <deployment identifier="macosx"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="16097"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -8,7 +9,7 @@
         <!--Preferences-->
         <scene sceneID="WDy-pZ-oD9">
             <objects>
-                <viewController title="Preferences" id="qdv-kZ-Khq" customClass="Preferences" customModule="Hackintosh_Forum" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Preferences" id="qdv-kZ-Khq" customClass="Preferences" customModule="ReSleep" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" focusRingType="none" id="oYs-At-w56">
                         <rect key="frame" x="0.0" y="0.0" width="209" height="99"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -18,7 +19,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="check" title="Add to Login Items" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="GNK-AO-Ztw">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
-                                    <font key="font" metaFont="titleBar"/>
+                                    <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <connections>
                                     <binding destination="ljD-kz-6T4" name="value" keyPath="values.Loginitem" id="RYh-Ls-eYd"/>
@@ -28,7 +29,7 @@
                                 <rect key="frame" x="12" y="37" width="213" height="16"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <textFieldCell key="cell" lineBreakMode="clipping" title="Time for countdown" id="tLG-yB-YBO">
-                                    <font key="font" metaFont="titleBar"/>
+                                    <font key="font" metaFont="system"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
@@ -37,7 +38,7 @@
                                 <rect key="frame" x="63" y="13" width="73" height="16"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <textFieldCell key="cell" lineBreakMode="clipping" title="Seconds" id="7Mo-PG-Z3G">
-                                    <font key="font" metaFont="titleBar"/>
+                                    <font key="font" metaFont="system"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
@@ -47,7 +48,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="push" title="Ok" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Div-YM-d8p">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="titleBar"/>
+                                    <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <connections>
                                     <action selector="ok_button:" target="qdv-kZ-Khq" id="R4Z-9H-EXU"/>
@@ -57,12 +58,12 @@
                                 <rect key="frame" x="14" y="11" width="45" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" id="Wgk-38-rlT">
-                                    <font key="font" metaFont="titleBar"/>
+                                    <font key="font" metaFont="system"/>
                                     <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                                 <connections>
-                                    <binding destination="ljD-kz-6T4" name="value" keyPath="values.Time" id="Ucw-zr-MaF"/>
+                                    <binding destination="ljD-kz-6T4" name="value" keyPath="values.TimeInfinite" id="Z1W-HW-G2H"/>
                                 </connections>
                             </textField>
                             <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Sk2-ep-Dm9">
@@ -70,7 +71,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="cFS-QZ-Szz">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="titleBar"/>
+                                    <font key="font" metaFont="system"/>
                                 </buttonCell>
                             </button>
                         </subviews>
@@ -92,10 +93,10 @@
                                 <menu key="submenu" title="ReSleep" systemMenu="apple" id="uQy-DD-JDr">
                                     <items>
                                         <menuItem isSeparatorItem="YES" id="gtp-Ne-fIj"/>
-                                        <menuItem title="Countdown" hidden="YES" id="64L-3T-Qsp">
+                                        <menuItem title="Countdown" id="64L-3T-Qsp">
                                             <modifierMask key="keyEquivalentModifierMask"/>
                                             <connections>
-                                                <action selector="fire_up:" target="Voe-Tx-rLC" id="JVa-bg-HYs"/>
+                                                <action selector="kill_task:" target="Voe-Tx-rLC" id="ZpJ-R9-Tj5"/>
                                             </connections>
                                         </menuItem>
                                         <menuItem isSeparatorItem="YES" id="uvh-Yx-GSS"/>
@@ -105,7 +106,7 @@
                                                 <segue destination="qdv-kZ-Khq" kind="show" id="Jxs-jI-ZGg"/>
                                             </connections>
                                         </menuItem>
-                                        <menuItem title="Check for Updates" id="r90-K9-RFs">
+                                        <menuItem title="Check for Updates" hidden="YES" id="r90-K9-RFs">
                                             <modifierMask key="keyEquivalentModifierMask"/>
                                         </menuItem>
                                         <menuItem title="Quit" id="4sb-4s-VLi">
@@ -123,7 +124,7 @@
                         <outlet property="delegate" destination="Voe-Tx-rLC" id="PrD-fu-P6m"/>
                     </connections>
                 </application>
-                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="Hackintosh_Forum" customModuleProvider="target">
+                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="ReSleep" customModuleProvider="target">
                     <connections>
                         <outlet property="appMenu" destination="uQy-DD-JDr" id="RjQ-yg-w2e"/>
                         <outlet property="menu_countdown" destination="64L-3T-Qsp" id="wb1-eX-aw5"/>

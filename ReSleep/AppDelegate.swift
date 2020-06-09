@@ -9,6 +9,7 @@
 import Cocoa
 import LoginServiceKit
 import LetsMove
+import ShellOut
 
 class AppDelegate: NSObject, NSApplicationDelegate {
         
@@ -18,48 +19,58 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     @IBOutlet weak var appMenu: NSMenu!
     
     @IBOutlet weak var menu_countdown: NSMenuItem!
-
-    let scriptPath = Bundle.main.path(forResource: "/Script/Script", ofType: "command")!
     
     var countdownTimer: Timer!
     //var totalTime = (UserDefaults.standard.string(forKey: "Time")! as NSString).integerValue
-    var totalTime = 5
     
+    var totalTime = 5
+
     
     func startTimer() {
         countdownTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(updateTime), userInfo: nil, repeats: true)
         RunLoop.main.add(countdownTimer!, forMode: .common)
     }
-   
+    
+    
     @objc func updateTime() {
+        UserDefaults.standard.set(true, forKey: "Running")
+        //UserDefaults.standard.set("90", forKey: "TimeInfinite")
+        
         let myMenu = self.menu_countdown
         myMenu!.title = "⏱️ " + "\(timeFormatted(totalTime))"
         self.menu_countdown.isHidden = false
+        self.menu_countdown.isEnabled = true
 
-           if totalTime != 0 {
-               totalTime -= 1
-           } else {
-               endTimer()
-               self.syncShellExec(path: self.scriptPath, args: ["fire_up"])
-               self.menu_countdown.isHidden = true
-           }
-       }
-   
+        if totalTime != 0 {
+            totalTime -= 1
+        } else {
+            endTimer()
+            do {
+                try shellOut(to: "pmset", arguments: ["-g"])
+                } catch {
+                    let error = error as! ShellOutError
+                    print(error.message)
+                    print(error.output)
+                }
+            endTimer()
+            totalTime = (UserDefaults.standard.string(forKey: "TimeInfinite")! as NSString).integerValue
+            startTimer()
+        }
+    }
+
+    
     func endTimer() {
         countdownTimer.invalidate()
-        totalTime = 50
-        self.menu_countdown.isHidden = true
     }
+
    
     func timeFormatted(_ totalSeconds: Int) -> String {
         let seconds: Int = totalSeconds % 60
         let minutes: Int = (totalSeconds / 60) % 60
-    //  let hours: Int = totalSeconds / 3600
         return String(format: "%02d:%02d", minutes, seconds)
     }
 
-
-
+    
     @objc func displayMenu() {
         
         guard let button = statusItem?.button else { return }
@@ -79,14 +90,22 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         NSMenu.popUpContextMenu(appMenu, with: event, for: button)
     }
 	
+    
 	func applicationDidFinishLaunching(_ aNotification: Notification) {
         
-        let check_time = UserDefaults.standard.string(forKey: "Time")
-        if check_time == nil{
-            UserDefaults.standard.string(forKey: "Time")
+        let countdown_check = UserDefaults.standard.string(forKey: "TimeInfinite")
+        if countdown_check == nil{
+            UserDefaults.standard.set("90", forKey: "TimeInfinite")
         }
         
+        let init_check = UserDefaults.standard.string(forKey: "TimeInit")
+        if init_check == nil{
+            UserDefaults.standard.set("5", forKey: "TimeInit")
+        }
         
+        menu_countdown.isHidden = true
+        
+        UserDefaults.standard.set(false, forKey: "Running")
         
         statusItem = NSStatusBar.system.statusItem(withLength: -1)
         
@@ -130,31 +149,34 @@ class AppDelegate: NSObject, NSApplicationDelegate {
                }
     }
 
+    func applicationWillTerminate(_ aNotification: Notification) {
+        UserDefaults.standard.set(false, forKey: "Running")
+    }
+    
+    
     @objc func detect_mouse_button(sender: NSStatusItem) {
-
         let event = NSApp.currentEvent!
 
         if event.type == NSEvent.EventType.rightMouseUp{
             self.displayMenu()
         } else {
-            self.startTimer()
+            let run_check = UserDefaults.standard.bool(forKey: "Running")
+            if run_check == false {
+                self.startTimer()
+            }
         }
     }
     
+    
     @IBAction func quit_menubar(_ sender: Any) {
-                NSApplication.shared.terminate(self)
-            }
-   
-    @IBAction func fire_up(_ sender: Any) {
-        endTimer()
+        NSApplication.shared.terminate(self)
     }
 
-    func syncShellExec(path: String, args: [String] = []) {
-        let process            = Process()
-        process.launchPath     = "/bin/bash"
-        process.arguments      = [path] + args
-        process.launch() // Start process
-        process.waitUntilExit() // Wait for process to terminate.
+    
+    @IBAction func kill_task(_ sender: Any) {
+        endTimer()
+        UserDefaults.standard.set(false, forKey: "Running")
+        totalTime = 5
     }
     
 }
