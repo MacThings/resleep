@@ -1,0 +1,48 @@
+/* Class = "NSMenuItem"; title = "Hackintosh-Forum"; ObjectID = "1Xt-HY-uBw"; */
+"1Xt-HY-uBw.title" = "Hackintosh-Forum";
+
+/* Class = "NSMenuItem"; title = "Quit"; ObjectID = "4sb-4s-VLi"; */
+"4sb-4s-VLi.title" = "Beenden";
+
+/* Class = "NSMenu"; title = "Main Menu"; ObjectID = "AYu-sK-qS6"; */
+"AYu-sK-qS6.title" = "Main Menu";
+
+/* Class = "NSMenuItem"; title = "Preferences"; ObjectID = "BOF-NM-1cW"; */
+"BOF-NM-1cW.title" = "Einstellungen";
+
+/* Class = "NSMenuItem"; title = "Safari"; ObjectID = "CMG-Me-2cy"; */
+"CMG-Me-2cy.title" = "Safari";
+
+/* Class = "NSButtonCell"; title = "Ok"; ObjectID = "Div-YM-d8p"; */
+"Div-YM-d8p.title" = "Ok";
+
+/* Class = "NSMenuItem"; title = "Firefox"; ObjectID = "eHX-6P-71v"; */
+"eHX-6P-71v.title" = "Firefox";
+
+/* Class = "NSButtonCell"; title = "Add to Login Items"; ObjectID = "GNK-AO-Ztw"; */
+"GNK-AO-Ztw.title" = "Zu Anmeldeobjekten hinzufügen";
+
+/* Class = "NSViewController"; title = "Preferences"; ObjectID = "qdv-kZ-Khq"; */
+"qdv-kZ-Khq.title" = "Einstellungen";
+
+/* Class = "NSMenuItem"; title = "Check for Updates"; ObjectID = "r90-K9-RFs"; */
+"r90-K9-RFs.title" = "Nach Updates suchen";
+
+/* Class = "NSMenuItem"; title = "Default"; ObjectID = "rGF-i7-V6P"; */
+"rGF-i7-V6P.title" = "Standard";
+
+/* Class = "NSMenuItem"; title = "Chrome"; ObjectID = "s17-Va-X8i"; */
+"s17-Va-X8i.title" = "Chrome";
+
+/* Class = "NSMenuItem"; title = "Chromium"; ObjectID = "sBK-3o-q90"; */
+"sBK-3o-q90.title" = "Chromium";
+
+/* Class = "NSTextFieldCell"; title = "Open in Browser:"; ObjectID = "tLG-yB-YBO"; */
+"tLG-yB-YBO.title" = "Öffne im Browser:";
+
+/* Class = "NSMenu"; title = "Hackintosh-Forum"; ObjectID = "uQy-DD-JDr"; */
+"uQy-DD-JDr.title" = "Hackintosh-Forum";
+
+/* Class = "NSMenuItem"; title = "Opera"; ObjectID = "WS7-ek-4nr"; */
+"WS7-ek-4nr.title" = "Opera";
+

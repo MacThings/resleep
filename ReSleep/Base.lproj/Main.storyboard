@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="16097"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Preferences-->
+        <scene sceneID="WDy-pZ-oD9">
+            <objects>
+                <viewController title="Preferences" id="qdv-kZ-Khq" customClass="Preferences" customModule="Hackintosh_Forum" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" focusRingType="none" id="oYs-At-w56">
+                        <rect key="frame" x="0.0" y="0.0" width="209" height="99"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bR4-Wm-YSM">
+                                <rect key="frame" x="10" y="69" width="193" height="18"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="check" title="Add to Login Items" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="GNK-AO-Ztw">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="titleBar"/>
+                                </buttonCell>
+                                <connections>
+                                    <binding destination="ljD-kz-6T4" name="value" keyPath="values.Loginitem" id="RYh-Ls-eYd"/>
+                                </connections>
+                            </button>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DBp-wD-9TH">
+                                <rect key="frame" x="12" y="37" width="213" height="16"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Time for countdown" id="tLG-yB-YBO">
+                                    <font key="font" metaFont="titleBar"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CPH-Ik-OO2">
+                                <rect key="frame" x="63" y="13" width="73" height="16"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Seconds" id="7Mo-PG-Z3G">
+                                    <font key="font" metaFont="titleBar"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dX1-17-0jH">
+                                <rect key="frame" x="138" y="4" width="57" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="push" title="Ok" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Div-YM-d8p">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="titleBar"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="ok_button:" target="qdv-kZ-Khq" id="R4Z-9H-EXU"/>
+                                </connections>
+                            </button>
+                            <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TWE-1D-DMm">
+                                <rect key="frame" x="14" y="11" width="45" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" id="Wgk-38-rlT">
+                                    <font key="font" metaFont="titleBar"/>
+                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                                <connections>
+                                    <binding destination="ljD-kz-6T4" name="value" keyPath="values.Time" id="Ucw-zr-MaF"/>
+                                </connections>
+                            </textField>
+                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Sk2-ep-Dm9">
+                                <rect key="frame" x="153" y="43" width="48" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="cFS-QZ-Szz">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="titleBar"/>
+                                </buttonCell>
+                            </button>
+                        </subviews>
+                    </view>
+                </viewController>
+                <customObject id="Id3-Lh-mjz" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+                <userDefaultsController representsSharedInstance="YES" id="ljD-kz-6T4"/>
+            </objects>
+            <point key="canvasLocation" x="-24.5" y="-22.5"/>
+        </scene>
+        <!--Application-->
+        <scene sceneID="JPo-4y-FX3">
+            <objects>
+                <application id="hnw-xV-0zn" sceneMemberID="viewController">
+                    <menu key="mainMenu" title="Main Menu" systemMenu="main" id="AYu-sK-qS6">
+                        <items>
+                            <menuItem title="ReSleep" id="1Xt-HY-uBw">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <menu key="submenu" title="ReSleep" systemMenu="apple" id="uQy-DD-JDr">
+                                    <items>
+                                        <menuItem isSeparatorItem="YES" id="gtp-Ne-fIj"/>
+                                        <menuItem title="Countdown" hidden="YES" id="64L-3T-Qsp">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="fire_up:" target="Voe-Tx-rLC" id="JVa-bg-HYs"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem isSeparatorItem="YES" id="uvh-Yx-GSS"/>
+                                        <menuItem title="Preferences" id="BOF-NM-1cW">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <segue destination="qdv-kZ-Khq" kind="show" id="Jxs-jI-ZGg"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Check for Updates" id="r90-K9-RFs">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                        </menuItem>
+                                        <menuItem title="Quit" id="4sb-4s-VLi">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="quit_menubar:" target="Voe-Tx-rLC" id="nxn-vk-Tfo"/>
+                                            </connections>
+                                        </menuItem>
+                                    </items>
+                                </menu>
+                            </menuItem>
+                        </items>
+                    </menu>
+                    <connections>
+                        <outlet property="delegate" destination="Voe-Tx-rLC" id="PrD-fu-P6m"/>
+                    </connections>
+                </application>
+                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="Hackintosh_Forum" customModuleProvider="target">
+                    <connections>
+                        <outlet property="appMenu" destination="uQy-DD-JDr" id="RjQ-yg-w2e"/>
+                        <outlet property="menu_countdown" destination="64L-3T-Qsp" id="wb1-eX-aw5"/>
+                    </connections>
+                </customObject>
+                <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+                <customObject id="eHj-u2-AVK" customClass="SUUpdater"/>
+                <userDefaultsController id="6aJ-vM-eA4"/>
+            </objects>
+            <point key="canvasLocation" x="-25" y="-293"/>
+        </scene>
+    </scenes>
+</document>

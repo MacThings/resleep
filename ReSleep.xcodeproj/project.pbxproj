@@ -1,0 +1,486 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2A4AF169231450C600EDB9E4 /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4AF168231450C600EDB9E4 /* Preferences.swift */; };
+		2A6A626B23718190006F346C /* logo_dark_28.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2AA45B212370BDF200DDB265 /* logo_dark_28.png */; };
+		2A6A62722371852B006F346C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCC6C4DF19A58C7A0063EC3C /* Main.storyboard */; };
+		2A6A6273237185B9006F346C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCC6C4DD19A58C7A0063EC3C /* Images.xcassets */; };
+		2AF688FB248F9D6100221D02 /* Script.command in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2AF688F8248F9C9F00221D02 /* Script.command */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		2AF688FF248FA2B200221D02 /* logo_28.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2AF688FC248FA1C000221D02 /* logo_28.png */; };
+		986F52E714D41D183F23FDE6 /* Pods_Hackintosh_Forum.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E994B175AB8F6A39DAF19CA /* Pods_Hackintosh_Forum.framework */; };
+		FCC6C4D819A58C7A0063EC3C /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC6C4D719A58C7A0063EC3C /* main.swift */; };
+		FCC6C4DC19A58C7A0063EC3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC6C4DB19A58C7A0063EC3C /* AppDelegate.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2A6A626923718183006F346C /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+				2AF688FF248FA2B200221D02 /* logo_28.png in CopyFiles */,
+				2A6A626B23718190006F346C /* logo_dark_28.png in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2AF688FA248F9D5900221D02 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Script;
+			dstSubfolderSpec = 7;
+			files = (
+				2AF688FB248F9D6100221D02 /* Script.command in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		14B2056DDCFDC27D3A96D38F /* Pods-Hackintosh-Forum.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hackintosh-Forum.release.xcconfig"; path = "Target Support Files/Pods-Hackintosh-Forum/Pods-Hackintosh-Forum.release.xcconfig"; sourceTree = "<group>"; };
+		2A4AF168231450C600EDB9E4 /* Preferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preferences.swift; sourceTree = "<group>"; };
+		2A6FAAC923169CFF002E6BA2 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Main.strings; sourceTree = "<group>"; };
+		2AA45B212370BDF200DDB265 /* logo_dark_28.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_dark_28.png; sourceTree = "<group>"; };
+		2AC08F7B23706FE100FAD128 /* resleep.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = resleep.html; sourceTree = "<group>"; };
+		2AF688F8248F9C9F00221D02 /* Script.command */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Script.command; sourceTree = "<group>"; };
+		2AF688FC248FA1C000221D02 /* logo_28.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_28.png; sourceTree = "<group>"; };
+		2AF688FE248FA27600221D02 /* ReSleep.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ReSleep.entitlements; sourceTree = "<group>"; };
+		7E994B175AB8F6A39DAF19CA /* Pods_Hackintosh_Forum.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hackintosh_Forum.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		979B348FABF2D028DAF962B6 /* Pods-Hackintosh-Forum.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hackintosh-Forum.debug.xcconfig"; path = "Target Support Files/Pods-Hackintosh-Forum/Pods-Hackintosh-Forum.debug.xcconfig"; sourceTree = "<group>"; };
+		FCC6C4D219A58C7A0063EC3C /* ReSleep.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReSleep.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCC6C4D619A58C7A0063EC3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCC6C4D719A58C7A0063EC3C /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		FCC6C4DB19A58C7A0063EC3C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FCC6C4DD19A58C7A0063EC3C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FCC6C4E019A58C7A0063EC3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FCC6C4CF19A58C7A0063EC3C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				986F52E714D41D183F23FDE6 /* Pods_Hackintosh_Forum.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2AF688F7248F9C9F00221D02 /* Script */ = {
+			isa = PBXGroup;
+			children = (
+				2AF688F8248F9C9F00221D02 /* Script.command */,
+			);
+			path = Script;
+			sourceTree = "<group>";
+		};
+		8D6B54BBB6B9D785E65A868A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7E994B175AB8F6A39DAF19CA /* Pods_Hackintosh_Forum.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D7C29D3102C7E7FBF9D05A48 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				979B348FABF2D028DAF962B6 /* Pods-Hackintosh-Forum.debug.xcconfig */,
+				14B2056DDCFDC27D3A96D38F /* Pods-Hackintosh-Forum.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FCC6C4C919A58C7A0063EC3C = {
+			isa = PBXGroup;
+			children = (
+				FCC6C4D419A58C7A0063EC3C /* ReSleep */,
+				FCC6C4D319A58C7A0063EC3C /* Products */,
+				D7C29D3102C7E7FBF9D05A48 /* Pods */,
+				8D6B54BBB6B9D785E65A868A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FCC6C4D319A58C7A0063EC3C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FCC6C4D219A58C7A0063EC3C /* ReSleep.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FCC6C4D419A58C7A0063EC3C /* ReSleep */ = {
+			isa = PBXGroup;
+			children = (
+				2AF688FE248FA27600221D02 /* ReSleep.entitlements */,
+				2AF688F7248F9C9F00221D02 /* Script */,
+				2AF688FC248FA1C000221D02 /* logo_28.png */,
+				2AA45B212370BDF200DDB265 /* logo_dark_28.png */,
+				FCC6C4DB19A58C7A0063EC3C /* AppDelegate.swift */,
+				2A4AF168231450C600EDB9E4 /* Preferences.swift */,
+				FCC6C4DD19A58C7A0063EC3C /* Images.xcassets */,
+				FCC6C4DF19A58C7A0063EC3C /* Main.storyboard */,
+				2AC08F7B23706FE100FAD128 /* resleep.html */,
+				FCC6C4D519A58C7A0063EC3C /* Supporting Files */,
+			);
+			path = ReSleep;
+			sourceTree = "<group>";
+		};
+		FCC6C4D519A58C7A0063EC3C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FCC6C4D619A58C7A0063EC3C /* Info.plist */,
+				FCC6C4D719A58C7A0063EC3C /* main.swift */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FCC6C4D119A58C7A0063EC3C /* ReSleep */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FCC6C4F019A58C7A0063EC3C /* Build configuration list for PBXNativeTarget "ReSleep" */;
+			buildPhases = (
+				1EEBC13657719C920225EB9B /* [CP] Check Pods Manifest.lock */,
+				FCC6C4CE19A58C7A0063EC3C /* Sources */,
+				FCC6C4CF19A58C7A0063EC3C /* Frameworks */,
+				FCC6C4D019A58C7A0063EC3C /* Resources */,
+				2A4AF16B2314684300EDB9E4 /* Copy Helper */,
+				2A6A626923718183006F346C /* CopyFiles */,
+				FFD61DF9FE577EA3453563C1 /* [CP] Embed Pods Frameworks */,
+				2AF688FA248F9D5900221D02 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ReSleep;
+			productName = KUMenuBar;
+			productReference = FCC6C4D219A58C7A0063EC3C /* ReSleep.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FCC6C4CA19A58C7A0063EC3C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = "Sascha Lamprecht";
+				TargetAttributes = {
+					FCC6C4D119A58C7A0063EC3C = {
+						CreatedOnToolsVersion = 6.0;
+						LastSwiftMigration = 1030;
+					};
+				};
+			};
+			buildConfigurationList = FCC6C4CD19A58C7A0063EC3C /* Build configuration list for PBXProject "ReSleep" */;
+			compatibilityVersion = "Xcode 10.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				de,
+			);
+			mainGroup = FCC6C4C919A58C7A0063EC3C;
+			productRefGroup = FCC6C4D319A58C7A0063EC3C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FCC6C4D119A58C7A0063EC3C /* ReSleep */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FCC6C4D019A58C7A0063EC3C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A6A6273237185B9006F346C /* Images.xcassets in Resources */,
+				2A6A62722371852B006F346C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1EEBC13657719C920225EB9B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Hackintosh-Forum-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2A4AF16B2314684300EDB9E4 /* Copy Helper */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Helper";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nrm -r /Applications/ReSleep.app\ncp -r \"${TARGET_BUILD_DIR}\"/ReSleep.app /Applications/\nif [ -d /Volumes/Homeshare/Xcode/resleep ]; then\ncp \"/Users/luigi/Documents/Xcode/resleep/ReSleep/resleep.html\" \"/Volumes/Homeshare/Xcode/resleep/upload/resleep.html\"\nrm /Volumes/Homeshare/Xcode/resleep/upload/resleep.zip 2> /dev/null\ncd /Applications\nditto -c -k --sequesterRsrc --keepParent ReSleep.app /Volumes/Homeshare/Xcode/resleep/upload/resleep.zip\nfi\n";
+		};
+		FFD61DF9FE577EA3453563C1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Hackintosh-Forum/Pods-Hackintosh-Forum-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Hackintosh-Forum/Pods-Hackintosh-Forum-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Hackintosh-Forum/Pods-Hackintosh-Forum-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FCC6C4CE19A58C7A0063EC3C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCC6C4DC19A58C7A0063EC3C /* AppDelegate.swift in Sources */,
+				2A4AF169231450C600EDB9E4 /* Preferences.swift in Sources */,
+				FCC6C4D819A58C7A0063EC3C /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FCC6C4DF19A58C7A0063EC3C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FCC6C4E019A58C7A0063EC3C /* Base */,
+				2A6FAAC923169CFF002E6BA2 /* de */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FCC6C4EE19A58C7A0063EC3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FCC6C4EF19A58C7A0063EC3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		FCC6C4F119A58C7A0063EC3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 979B348FABF2D028DAF962B6 /* Pods-Hackintosh-Forum.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ReSleep/ReSleep.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = YES;
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4ATFWV7M4B;
+				ENABLE_HARDENED_RUNTIME = NO;
+				INFOPLIST_FILE = ReSleep/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = resleep.slsoft.de;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				VALID_ARCHS = x86_64;
+			};
+			name = Debug;
+		};
+		FCC6C4F219A58C7A0063EC3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14B2056DDCFDC27D3A96D38F /* Pods-Hackintosh-Forum.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ReSleep/ReSleep.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = YES;
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4ATFWV7M4B;
+				ENABLE_HARDENED_RUNTIME = NO;
+				INFOPLIST_FILE = ReSleep/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = resleep.slsoft.de;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				VALID_ARCHS = x86_64;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FCC6C4CD19A58C7A0063EC3C /* Build configuration list for PBXProject "ReSleep" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCC6C4EE19A58C7A0063EC3C /* Debug */,
+				FCC6C4EF19A58C7A0063EC3C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FCC6C4F019A58C7A0063EC3C /* Build configuration list for PBXNativeTarget "ReSleep" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCC6C4F119A58C7A0063EC3C /* Debug */,
+				FCC6C4F219A58C7A0063EC3C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FCC6C4CA19A58C7A0063EC3C /* Project object */;
+}
