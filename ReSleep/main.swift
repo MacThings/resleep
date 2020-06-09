@@ -10,7 +10,3 @@ import Cocoa
 
 let _ = NSApplicationMain(CommandLine.argc, CommandLine.unsafeArgv)
 
-let notifysecs = UserDefaults.standard.string(forKey: "Time")
-if notifysecs == nil{
-    UserDefaults.standard.set("60", forKey: "Time")
-}

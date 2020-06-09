@@ -17,14 +17,11 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 	var statusItem: NSStatusItem?
     
     @IBOutlet weak var appMenu: NSMenu!
-    
     @IBOutlet weak var menu_countdown: NSMenuItem!
     
     var countdownTimer: Timer!
     //var totalTime = (UserDefaults.standard.string(forKey: "Time")! as NSString).integerValue
-    
     var totalTime = 5
-
     
     func startTimer() {
         countdownTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(updateTime), userInfo: nil, repeats: true)
@@ -46,7 +43,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         } else {
             endTimer()
             do {
-                try shellOut(to: "pmset", arguments: ["-g"])
+                try shellOut(to: "pmset", arguments: ["sleepnow"])
                 } catch {
                     let error = error as! ShellOutError
                     print(error.message)

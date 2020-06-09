@@ -12,6 +12,7 @@
 		2A6A62722371852B006F346C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCC6C4DF19A58C7A0063EC3C /* Main.storyboard */; };
 		2A6A6273237185B9006F346C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCC6C4DD19A58C7A0063EC3C /* Images.xcassets */; };
 		2A891D34249010AE0084F523 /* ShellOut in Frameworks */ = {isa = PBXBuildFile; productRef = 2A891D33249010AE0084F523 /* ShellOut */; };
+		2A891D372490253C0084F523 /* LoginServiceKit in Frameworks */ = {isa = PBXBuildFile; productRef = 2A891D362490253C0084F523 /* LoginServiceKit */; };
 		2AF688FF248FA2B200221D02 /* logo_28.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2AF688FC248FA1C000221D02 /* logo_28.png */; };
 		2C0156E52269E1E9615B66DA /* Pods_ReSleep.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5A154C5FFF62EFB84BBC82D /* Pods_ReSleep.framework */; };
 		FCC6C4D819A58C7A0063EC3C /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC6C4D719A58C7A0063EC3C /* main.swift */; };
@@ -27,15 +28,6 @@
 			files = (
 				2AF688FF248FA2B200221D02 /* logo_28.png in CopyFiles */,
 				2A6A626B23718190006F346C /* logo_dark_28.png in CopyFiles */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2AF688FA248F9D5900221D02 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = Script;
-			dstSubfolderSpec = 7;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,6 +59,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A891D34249010AE0084F523 /* ShellOut in Frameworks */,
+				2A891D372490253C0084F523 /* LoginServiceKit in Frameworks */,
 				2C0156E52269E1E9615B66DA /* Pods_ReSleep.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -150,7 +143,6 @@
 				2A4AF16B2314684300EDB9E4 /* Copy Helper */,
 				2A6A626923718183006F346C /* CopyFiles */,
 				FFD61DF9FE577EA3453563C1 /* [CP] Embed Pods Frameworks */,
-				2AF688FA248F9D5900221D02 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -159,6 +151,7 @@
 			name = ReSleep;
 			packageProductDependencies = (
 				2A891D33249010AE0084F523 /* ShellOut */,
+				2A891D362490253C0084F523 /* LoginServiceKit */,
 			);
 			productName = KUMenuBar;
 			productReference = FCC6C4D219A58C7A0063EC3C /* ReSleep.app */;
@@ -191,6 +184,7 @@
 			mainGroup = FCC6C4C919A58C7A0063EC3C;
 			packageReferences = (
 				2A891D32249010AE0084F523 /* XCRemoteSwiftPackageReference "ShellOut" */,
+				2A891D352490253B0084F523 /* XCRemoteSwiftPackageReference "LoginServiceKit" */,
 			);
 			productRefGroup = FCC6C4D319A58C7A0063EC3C /* Products */;
 			projectDirPath = "";
@@ -411,7 +405,7 @@
 				CODE_SIGN_ENTITLEMENTS = ReSleep/ReSleep.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = YES;
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4ATFWV7M4B;
@@ -439,7 +433,7 @@
 				CODE_SIGN_ENTITLEMENTS = ReSleep/ReSleep.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = YES;
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4ATFWV7M4B;
@@ -491,6 +485,14 @@
 				minimumVersion = 2.3.0;
 			};
 		};
+		2A891D352490253B0084F523 /* XCRemoteSwiftPackageReference "LoginServiceKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Clipy/LoginServiceKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.2.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -498,6 +500,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 2A891D32249010AE0084F523 /* XCRemoteSwiftPackageReference "ShellOut" */;
 			productName = ShellOut;
+		};
+		2A891D362490253C0084F523 /* LoginServiceKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2A891D352490253B0084F523 /* XCRemoteSwiftPackageReference "LoginServiceKit" */;
+			productName = LoginServiceKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
