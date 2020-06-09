@@ -99,6 +99,11 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         if init_check == nil{
             UserDefaults.standard.set("5", forKey: "TimeInit")
         }
+
+        let immediately = UserDefaults.standard.string(forKey: "Immediately")
+        if immediately == nil{
+            UserDefaults.standard.set(false, forKey: "Immediatley")
+        }
         
         menu_countdown.isHidden = true
         
@@ -144,6 +149,11 @@ class AppDelegate: NSObject, NSApplicationDelegate {
                            LoginServiceKit.removeLoginItems(at: Bundle.main.bundlePath)
                        }
                }
+        let immediately_check = UserDefaults.standard.bool(forKey: "Immediately")
+        if immediately_check == true {
+            startTimer()
+        }
+        
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
