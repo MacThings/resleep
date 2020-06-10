@@ -91,7 +91,7 @@ DQ
                                 </textFieldCell>
                             </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CPH-Ik-OO2">
-                                <rect key="frame" x="63" y="20" width="73" height="16"/>
+                                <rect key="frame" x="63" y="23" width="73" height="16"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <textFieldCell key="cell" lineBreakMode="clipping" title="Seconds" id="7Mo-PG-Z3G">
                                     <font key="font" metaFont="system"/>

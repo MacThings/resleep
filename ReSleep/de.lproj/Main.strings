@@ -23,7 +23,7 @@
 "Div-YM-d8p.title" = "Ok";
 
 /* Class = "NSButtonCell"; title = "Play notification sounds"; ObjectID = "Eib-Kx-RID"; */
-"Eib-Kx-RID.title" = "Spiele Hinweistöne";
+"Eib-Kx-RID.title" = "Hinweistöne";
 
 /* Class = "NSButtonCell"; title = "Add to Login Items"; ObjectID = "GNK-AO-Ztw"; */
 "GNK-AO-Ztw.title" = "Zu Anmeldeobjekten hinzufügen";

@@ -1,9 +1,9 @@
 //
 //  AppDelegate.swift
-//  Kext Updater
+//  ReSleep
 //
-//  Created by Sascha Lamprecht on 04.11.2019.
-//  Copyright © 2019 Sascha Lamprecht. All rights reserved.
+//  Created by Sascha Lamprecht on 10.06.2020.
+//  Copyright © 2020 Sascha Lamprecht. All rights reserved.
 //
 
 import Cocoa
