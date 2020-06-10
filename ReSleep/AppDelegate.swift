@@ -11,6 +11,35 @@ import LoginServiceKit
 import LetsMove
 import ShellOut
 
+extension UserDefaults {
+
+    public func optionalInt(forKey defaultName: String) -> Int? {
+        let defaults = self
+        if let value = defaults.value(forKey: defaultName) {
+            return value as? Int
+        }
+        return nil
+    }
+
+    public func optionalBool(forKey defaultName: String) -> Bool? {
+        let defaults = self
+        if let value = defaults.value(forKey: defaultName) {
+            return value as? Bool
+        }
+        return nil
+    }
+    
+    public func optionalString(forKey defaultName: String) -> String? {
+        let defaults = self
+        if let value = defaults.value(forKey: defaultName) {
+            return value as? String
+        }
+        return nil
+    }
+}
+
+
+
 class AppDelegate: NSObject, NSApplicationDelegate {
         
     //strong reference to retain the status bar item object
@@ -20,10 +49,13 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     @IBOutlet weak var menu_countdown: NSMenuItem!
     
     var countdownTimer: Timer!
+       
     //var totalTime = (UserDefaults.standard.string(forKey: "Time")! as NSString).integerValue
     var totalTime = 5
     
     func startTimer() {
+        self.menu_countdown.isHidden = false
+        self.menu_countdown.isEnabled = true
         countdownTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(updateTime), userInfo: nil, repeats: true)
         RunLoop.main.add(countdownTimer!, forMode: .common)
     }
@@ -31,13 +63,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     
     @objc func updateTime() {
         UserDefaults.standard.set(true, forKey: "Running")
-        //UserDefaults.standard.set("90", forKey: "TimeInfinite")
-        
         let myMenu = self.menu_countdown
         myMenu!.title = "⏱️ " + "\(timeFormatted(totalTime))"
-        self.menu_countdown.isHidden = false
-        self.menu_countdown.isEnabled = true
-
         if totalTime != 0 {
             totalTime -= 1
         } else {
@@ -160,6 +187,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         UserDefaults.standard.set(false, forKey: "Running")
     }
     
+    public func check_timeinit(_ sender: Any) {
+        NSApplication.shared.terminate(self)
+    }
     
     @objc func detect_mouse_button(sender: NSStatusItem) {
         let event = NSApp.currentEvent!
@@ -184,6 +214,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         endTimer()
         UserDefaults.standard.set(false, forKey: "Running")
         totalTime = 5
+        self.menu_countdown.isHidden = true
     }
     
 }
