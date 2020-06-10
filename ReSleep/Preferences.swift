@@ -13,6 +13,7 @@ class Preferences: NSViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.preferredContentSize = NSMakeSize(self.view.frame.size.width, self.view.frame.size.height);
         NSApp.activate(ignoringOtherApps: true)
         // Do view setup here.
     }
@@ -27,6 +28,10 @@ class Preferences: NSViewController {
                     LoginServiceKit.removeLoginItems(at: Bundle.main.bundlePath)
                 }
         }
+        self.view.window?.close()
+    }
+    
+    @objc func cancel(_ sender: Any?) {
         self.view.window?.close()
     }
 }

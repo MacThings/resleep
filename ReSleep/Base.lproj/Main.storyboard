@@ -67,20 +67,6 @@
                                     <binding destination="ljD-kz-6T4" name="value" keyPath="values.Sound" id="wV3-dZ-tHW"/>
                                 </connections>
                             </button>
-                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dX1-17-0jH">
-                                <rect key="frame" x="185" y="13" width="57" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <buttonCell key="cell" type="push" title="Ok" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Div-YM-d8p">
-                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="system"/>
-                                    <string key="keyEquivalent" base64-UTF8="YES">
-DQ
-</string>
-                                </buttonCell>
-                                <connections>
-                                    <action selector="ok_button:" target="qdv-kZ-Khq" id="R4Z-9H-EXU"/>
-                                </connections>
-                            </button>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DBp-wD-9TH">
                                 <rect key="frame" x="12" y="44" width="213" height="16"/>
                                 <autoresizingMask key="autoresizingMask"/>
@@ -105,7 +91,78 @@ DQ
                 <customObject id="Id3-Lh-mjz" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
                 <userDefaultsController representsSharedInstance="YES" id="ljD-kz-6T4"/>
             </objects>
-            <point key="canvasLocation" x="-1" y="-3.5"/>
+            <point key="canvasLocation" x="131" y="-407"/>
+        </scene>
+        <!--About-->
+        <scene sceneID="bOi-cZ-QRG">
+            <objects>
+                <customObject id="1wk-vx-cfr" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+                <viewController title="About" id="CZh-37-pW4" customClass="About" customModule="ReSleep" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="Wki-4e-TAO">
+                        <rect key="frame" x="0.0" y="0.0" width="339" height="270"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bvr-sK-cOt">
+                                <rect key="frame" x="-2" y="222" width="343" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="ReSleep" id="QNC-iC-D6D">
+                                    <font key="font" metaFont="system" size="30"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UKy-Sr-reZ">
+                                <rect key="frame" x="121" y="107" width="96" height="96"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="NSApplicationIcon" id="frO-EQ-YR1"/>
+                            </imageView>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yZ5-PH-9Bx">
+                                <rect key="frame" x="-2" y="20" width="343" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="&lt;&lt; Copyright &gt;&gt;" id="6jY-9r-fCR">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gCu-p0-shi">
+                                <rect key="frame" x="-2" y="71" width="343" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="&lt;&lt; Version &gt;&gt;" id="cKF-i3-Y6o">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="L1j-LC-UIn">
+                                <rect key="frame" x="-2" y="45" width="343" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="Visit website" id="FF7-Tt-LVT">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="systemBlueColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6eS-a0-PA5">
+                                <rect key="frame" x="121" y="43" width="96" height="18"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="aYj-hP-XVW">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="goto_website:" target="CZh-37-pW4" id="kfc-uB-1yj"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                    </view>
+                    <connections>
+                        <outlet property="label_copyright" destination="yZ5-PH-9Bx" id="ygA-vM-FvI"/>
+                        <outlet property="label_version" destination="gCu-p0-shi" id="LqO-4g-1R2"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="57.5" y="-767"/>
         </scene>
         <!--Application-->
         <scene sceneID="JPo-4y-FX3">
@@ -117,8 +174,7 @@ DQ
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <menu key="submenu" title="ReSleep" systemMenu="apple" id="uQy-DD-JDr">
                                     <items>
-                                        <menuItem isSeparatorItem="YES" id="gtp-Ne-fIj"/>
-                                        <menuItem title="Countdown" id="64L-3T-Qsp">
+                                        <menuItem id="64L-3T-Qsp">
                                             <modifierMask key="keyEquivalentModifierMask"/>
                                             <connections>
                                                 <action selector="kill_task:" target="Voe-Tx-rLC" id="ZpJ-R9-Tj5"/>
@@ -131,8 +187,19 @@ DQ
                                                 <segue destination="qdv-kZ-Khq" kind="show" id="Jxs-jI-ZGg"/>
                                             </connections>
                                         </menuItem>
-                                        <menuItem title="Check for Updates" hidden="YES" id="r90-K9-RFs">
+                                        <menuItem title="Check for Updates" id="r90-K9-RFs">
                                             <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="checkForUpdates:" target="eHj-u2-AVK" id="dcX-qz-VhN"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem isSeparatorItem="YES" id="5U7-IR-cME"/>
+                                        <menuItem title="About" id="GYn-f8-vmq">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="quit_menubar:" target="Voe-Tx-rLC" id="wYJ-BG-PVR"/>
+                                                <segue destination="CZh-37-pW4" kind="show" id="Zfa-UO-YHw"/>
+                                            </connections>
                                         </menuItem>
                                         <menuItem title="Quit" id="4sb-4s-VLi">
                                             <modifierMask key="keyEquivalentModifierMask"/>
@@ -159,7 +226,10 @@ DQ
                 <customObject id="eHj-u2-AVK" customClass="SUUpdater"/>
                 <userDefaultsController id="6aJ-vM-eA4"/>
             </objects>
-            <point key="canvasLocation" x="-25" y="-293"/>
+            <point key="canvasLocation" x="-215" y="-514"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="NSApplicationIcon" width="32" height="32"/>
+    </resources>
 </document>

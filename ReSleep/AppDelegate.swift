@@ -27,8 +27,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     var totalTime = 5
     
     func startTimer() {
-        self.menu_countdown.isHidden = false
         self.menu_countdown.isEnabled = true
+        self.menu_countdown.isHidden = false
         countdownTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(updateTime), userInfo: nil, repeats: true)
         RunLoop.main.add(countdownTimer!, forMode: .common)
     }
