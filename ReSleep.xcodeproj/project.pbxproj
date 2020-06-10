@@ -14,6 +14,8 @@
 		2A891D34249010AE0084F523 /* ShellOut in Frameworks */ = {isa = PBXBuildFile; productRef = 2A891D33249010AE0084F523 /* ShellOut */; };
 		2A891D372490253C0084F523 /* LoginServiceKit in Frameworks */ = {isa = PBXBuildFile; productRef = 2A891D362490253C0084F523 /* LoginServiceKit */; };
 		2AF688FF248FA2B200221D02 /* logo_28.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2AF688FC248FA1C000221D02 /* logo_28.png */; };
+		2AFA895C2490C52200FA3E86 /* notification.mp3 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2AFA895A2490C51900FA3E86 /* notification.mp3 */; };
+		2AFA895F2490C7AD00FA3E86 /* stop.mp3 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2AFA895D2490C76B00FA3E86 /* stop.mp3 */; };
 		2C0156E52269E1E9615B66DA /* Pods_ReSleep.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5A154C5FFF62EFB84BBC82D /* Pods_ReSleep.framework */; };
 		FCC6C4D819A58C7A0063EC3C /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC6C4D719A58C7A0063EC3C /* main.swift */; };
 		FCC6C4DC19A58C7A0063EC3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC6C4DB19A58C7A0063EC3C /* AppDelegate.swift */; };
@@ -26,6 +28,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 7;
 			files = (
+				2AFA895F2490C7AD00FA3E86 /* stop.mp3 in CopyFiles */,
+				2AFA895C2490C52200FA3E86 /* notification.mp3 in CopyFiles */,
 				2AF688FF248FA2B200221D02 /* logo_28.png in CopyFiles */,
 				2A6A626B23718190006F346C /* logo_dark_28.png in CopyFiles */,
 			);
@@ -42,6 +46,8 @@
 		2AC08F7B23706FE100FAD128 /* resleep.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = resleep.html; sourceTree = "<group>"; };
 		2AF688FC248FA1C000221D02 /* logo_28.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_28.png; sourceTree = "<group>"; };
 		2AF688FE248FA27600221D02 /* ReSleep.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ReSleep.entitlements; sourceTree = "<group>"; };
+		2AFA895A2490C51900FA3E86 /* notification.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = notification.mp3; sourceTree = "<group>"; };
+		2AFA895D2490C76B00FA3E86 /* stop.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = stop.mp3; sourceTree = "<group>"; };
 		979B348FABF2D028DAF962B6 /* Pods-Hackintosh-Forum.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hackintosh-Forum.debug.xcconfig"; path = "Target Support Files/Pods-Hackintosh-Forum/Pods-Hackintosh-Forum.debug.xcconfig"; sourceTree = "<group>"; };
 		DC338E7856D2453723B865D7 /* Pods-ReSleep.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReSleep.release.xcconfig"; path = "Target Support Files/Pods-ReSleep/Pods-ReSleep.release.xcconfig"; sourceTree = "<group>"; };
 		F5A154C5FFF62EFB84BBC82D /* Pods_ReSleep.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReSleep.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -107,6 +113,8 @@
 		FCC6C4D419A58C7A0063EC3C /* ReSleep */ = {
 			isa = PBXGroup;
 			children = (
+				2AFA895A2490C51900FA3E86 /* notification.mp3 */,
+				2AFA895D2490C76B00FA3E86 /* stop.mp3 */,
 				2AF688FC248FA1C000221D02 /* logo_28.png */,
 				2AA45B212370BDF200DDB265 /* logo_dark_28.png */,
 				FCC6C4DB19A58C7A0063EC3C /* AppDelegate.swift */,

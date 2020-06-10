@@ -11,11 +11,11 @@
             <objects>
                 <viewController title="Preferences" id="qdv-kZ-Khq" customClass="Preferences" customModule="ReSleep" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" focusRingType="none" id="oYs-At-w56">
-                        <rect key="frame" x="0.0" y="0.0" width="256" height="108"/>
+                        <rect key="frame" x="0.0" y="0.0" width="256" height="137"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bR4-Wm-YSM">
-                                <rect key="frame" x="10" y="79" width="236" height="18"/>
+                                <rect key="frame" x="10" y="108" width="236" height="18"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="check" title="Add to Login Items" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="GNK-AO-Ztw">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
@@ -25,26 +25,8 @@
                                     <binding destination="ljD-kz-6T4" name="value" keyPath="values.Loginitem" id="RYh-Ls-eYd"/>
                                 </connections>
                             </button>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DBp-wD-9TH">
-                                <rect key="frame" x="12" y="37" width="213" height="16"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <textFieldCell key="cell" lineBreakMode="clipping" title="Time for countdown" id="tLG-yB-YBO">
-                                    <font key="font" metaFont="system"/>
-                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                </textFieldCell>
-                            </textField>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CPH-Ik-OO2">
-                                <rect key="frame" x="63" y="13" width="73" height="16"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <textFieldCell key="cell" lineBreakMode="clipping" title="Seconds" id="7Mo-PG-Z3G">
-                                    <font key="font" metaFont="system"/>
-                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                </textFieldCell>
-                            </textField>
                             <textField focusRingType="none" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TWE-1D-DMm">
-                                <rect key="frame" x="14" y="10" width="45" height="21"/>
+                                <rect key="frame" x="14" y="20" width="45" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" focusRingType="none" drawsBackground="YES" id="Wgk-38-rlT">
                                     <font key="font" metaFont="system"/>
@@ -56,7 +38,7 @@
                                 </connections>
                             </textField>
                             <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Sk2-ep-Dm9">
-                                <rect key="frame" x="153" y="52" width="48" height="48"/>
+                                <rect key="frame" x="153" y="81" width="48" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="cFS-QZ-Szz">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -64,9 +46,9 @@
                                 </buttonCell>
                             </button>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="K1M-EG-G9f">
-                                <rect key="frame" x="10" y="59" width="228" height="18"/>
+                                <rect key="frame" x="10" y="88" width="228" height="18"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <buttonCell key="cell" type="check" title="Countdown on start" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="DhZ-0g-Faa">
+                                <buttonCell key="cell" type="check" title="Immediate sleep on start" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="DhZ-0g-Faa">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
@@ -74,8 +56,19 @@
                                     <binding destination="ljD-kz-6T4" name="value" keyPath="values.Immediately" id="fzv-GM-sQE"/>
                                 </connections>
                             </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZOx-tN-3gM">
+                                <rect key="frame" x="10" y="68" width="228" height="18"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="check" title="Play notification sounds" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="Eib-Kx-RID">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <binding destination="ljD-kz-6T4" name="value" keyPath="values.Sound" id="wV3-dZ-tHW"/>
+                                </connections>
+                            </button>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dX1-17-0jH">
-                                <rect key="frame" x="185" y="3" width="57" height="32"/>
+                                <rect key="frame" x="185" y="13" width="57" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="push" title="Ok" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Div-YM-d8p">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -88,13 +81,31 @@ DQ
                                     <action selector="ok_button:" target="qdv-kZ-Khq" id="R4Z-9H-EXU"/>
                                 </connections>
                             </button>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DBp-wD-9TH">
+                                <rect key="frame" x="12" y="44" width="213" height="16"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="ReSleep after" id="tLG-yB-YBO">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CPH-Ik-OO2">
+                                <rect key="frame" x="63" y="20" width="73" height="16"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Seconds" id="7Mo-PG-Z3G">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
                         </subviews>
                     </view>
                 </viewController>
                 <customObject id="Id3-Lh-mjz" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
                 <userDefaultsController representsSharedInstance="YES" id="ljD-kz-6T4"/>
             </objects>
-            <point key="canvasLocation" x="-1" y="-18"/>
+            <point key="canvasLocation" x="-1" y="-3.5"/>
         </scene>
         <!--Application-->
         <scene sceneID="JPo-4y-FX3">

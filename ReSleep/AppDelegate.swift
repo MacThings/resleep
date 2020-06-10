@@ -10,35 +10,7 @@ import Cocoa
 import LoginServiceKit
 import LetsMove
 import ShellOut
-
-extension UserDefaults {
-
-    public func optionalInt(forKey defaultName: String) -> Int? {
-        let defaults = self
-        if let value = defaults.value(forKey: defaultName) {
-            return value as? Int
-        }
-        return nil
-    }
-
-    public func optionalBool(forKey defaultName: String) -> Bool? {
-        let defaults = self
-        if let value = defaults.value(forKey: defaultName) {
-            return value as? Bool
-        }
-        return nil
-    }
-    
-    public func optionalString(forKey defaultName: String) -> String? {
-        let defaults = self
-        if let value = defaults.value(forKey: defaultName) {
-            return value as? String
-        }
-        return nil
-    }
-}
-
-
+import AVFoundation
 
 class AppDelegate: NSObject, NSApplicationDelegate {
         
@@ -48,6 +20,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     @IBOutlet weak var appMenu: NSMenu!
     @IBOutlet weak var menu_countdown: NSMenuItem!
     
+    var player: AVAudioPlayer?
     var countdownTimer: Timer!
        
     //var totalTime = (UserDefaults.standard.string(forKey: "Time")! as NSString).integerValue
@@ -200,6 +173,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             let run_check = UserDefaults.standard.bool(forKey: "Running")
             if run_check == false {
                 self.startTimer()
+                let sound_check = UserDefaults.standard.bool(forKey: "Sound")
+                if sound_check == true {
+                playSoundNotify()
+                }
             }
         }
     }
@@ -211,10 +188,44 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     
     @IBAction func kill_task(_ sender: Any) {
+        let sound_check = UserDefaults.standard.bool(forKey: "Sound")
+        if sound_check == true {
+        playSoundStop()
+        }
         endTimer()
         UserDefaults.standard.set(false, forKey: "Running")
         totalTime = 5
         self.menu_countdown.isHidden = true
+    }
+   
+    func playSoundNotify() {
+        let url = Bundle.main.url(forResource: "notification", withExtension: "mp3")!
+
+        do {
+            player = try AVAudioPlayer(contentsOf: url)
+            guard let player = player else { return }
+
+            player.prepareToPlay()
+            player.play()
+
+        } catch let error as NSError {
+            print(error.description)
+        }
+    }
+    
+    func playSoundStop() {
+        let url = Bundle.main.url(forResource: "stop", withExtension: "mp3")!
+
+        do {
+            player = try AVAudioPlayer(contentsOf: url)
+            guard let player = player else { return }
+
+            player.prepareToPlay()
+            player.play()
+
+        } catch let error as NSError {
+            print(error.description)
+        }
     }
     
 }
