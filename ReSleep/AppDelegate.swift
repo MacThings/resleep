@@ -105,6 +105,11 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             UserDefaults.standard.set(false, forKey: "Immediatley")
         }
         
+        let sound_check = UserDefaults.standard.string(forKey: "Sound")
+        if sound_check == nil{
+            UserDefaults.standard.set(true, forKey: "Sound")
+        }
+        
         menu_countdown.isHidden = true
         
         UserDefaults.standard.set(false, forKey: "Running")

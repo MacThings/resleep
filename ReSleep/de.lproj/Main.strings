@@ -4,11 +4,14 @@
 /* Class = "NSMenuItem"; title = "Quit"; ObjectID = "4sb-4s-VLi"; */
 "4sb-4s-VLi.title" = "Beenden";
 
+/* Class = "NSTextFieldCell"; title = "<< Copyright >>"; ObjectID = "6jY-9r-fCR"; */
+"6jY-9r-fCR.title" = "<< Copyright >>";
+
 /* Class = "NSTextFieldCell"; title = "Seconds"; ObjectID = "7Mo-PG-Z3G"; */
 "7Mo-PG-Z3G.title" = "Sekunden";
 
-/* Class = "NSMenuItem"; title = "Countdown"; ObjectID = "64L-3T-Qsp"; */
-"64L-3T-Qsp.title" = "Countdown";
+/* Class = "NSButtonCell"; title = "Ok"; ObjectID = "8VC-an-Ins"; */
+"8VC-an-Ins.title" = "Ok";
 
 /* Class = "NSMenu"; title = "Main Menu"; ObjectID = "AYu-sK-qS6"; */
 "AYu-sK-qS6.title" = "Main Menu";
@@ -16,20 +19,32 @@
 /* Class = "NSMenuItem"; title = "Preferences"; ObjectID = "BOF-NM-1cW"; */
 "BOF-NM-1cW.title" = "Einstellungen";
 
+/* Class = "NSTextFieldCell"; title = "<< Version >>"; ObjectID = "cKF-i3-Y6o"; */
+"cKF-i3-Y6o.title" = "<< Version >>";
+
+/* Class = "NSViewController"; title = "About"; ObjectID = "CZh-37-pW4"; */
+"CZh-37-pW4.title" = "Über";
+
 /* Class = "NSButtonCell"; title = "Immediate sleep on start"; ObjectID = "DhZ-0g-Faa"; */
 "DhZ-0g-Faa.title" = "Nach Start sofort schlafen";
-
-/* Class = "NSButtonCell"; title = "Ok"; ObjectID = "Div-YM-d8p"; */
-"Div-YM-d8p.title" = "Ok";
 
 /* Class = "NSButtonCell"; title = "Play notification sounds"; ObjectID = "Eib-Kx-RID"; */
 "Eib-Kx-RID.title" = "Hinweistöne";
 
+/* Class = "NSTextFieldCell"; title = "Visit website"; ObjectID = "FF7-Tt-LVT"; */
+"FF7-Tt-LVT.title" = "Webseite besuchen";
+
 /* Class = "NSButtonCell"; title = "Add to Login Items"; ObjectID = "GNK-AO-Ztw"; */
 "GNK-AO-Ztw.title" = "Zu Anmeldeobjekten hinzufügen";
 
+/* Class = "NSMenuItem"; title = "About"; ObjectID = "GYn-f8-vmq"; */
+"GYn-f8-vmq.title" = "Über";
+
 /* Class = "NSViewController"; title = "Preferences"; ObjectID = "qdv-kZ-Khq"; */
 "qdv-kZ-Khq.title" = "Einstellungen";
+
+/* Class = "NSTextFieldCell"; title = "ReSleep"; ObjectID = "QNC-iC-D6D"; */
+"QNC-iC-D6D.title" = "ReSleep";
 
 /* Class = "NSMenuItem"; title = "Check for Updates"; ObjectID = "r90-K9-RFs"; */
 "r90-K9-RFs.title" = "Nach Updates suchen";

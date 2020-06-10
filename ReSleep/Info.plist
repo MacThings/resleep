@@ -35,7 +35,7 @@
 	<key>NSPrincipalClass</key>
 	<string>NSApplication</string>
 	<key>SUFeedURL</key>
-	<string>https://update.kextupdater.de/resleep/appcast.xml</string>
+	<string>https://www.sl-soft.de/extern/software/resleep/appcast.xml</string>
 	<key>SUPublicEDKey</key>
 	<string>IocWX96bR2E4UoPBgFT3KVRVWbut/1HjJVrfChE6l+s=</string>
 </dict>

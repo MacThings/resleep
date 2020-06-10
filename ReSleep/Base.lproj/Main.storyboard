@@ -14,10 +14,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="256" height="137"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bR4-Wm-YSM">
+                            <button focusRingType="none" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bR4-Wm-YSM">
                                 <rect key="frame" x="10" y="108" width="236" height="18"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <buttonCell key="cell" type="check" title="Add to Login Items" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="GNK-AO-Ztw">
+                                <buttonCell key="cell" type="check" title="Add to Login Items" bezelStyle="regularSquare" imagePosition="left" state="on" focusRingType="none" inset="2" id="GNK-AO-Ztw">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
@@ -45,10 +45,10 @@
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                             </button>
-                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="K1M-EG-G9f">
+                            <button focusRingType="none" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="K1M-EG-G9f">
                                 <rect key="frame" x="10" y="88" width="228" height="18"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <buttonCell key="cell" type="check" title="Immediate sleep on start" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="DhZ-0g-Faa">
+                                <buttonCell key="cell" type="check" title="Immediate sleep on start" bezelStyle="regularSquare" imagePosition="left" state="on" focusRingType="none" inset="2" id="DhZ-0g-Faa">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
@@ -56,10 +56,10 @@
                                     <binding destination="ljD-kz-6T4" name="value" keyPath="values.Immediately" id="fzv-GM-sQE"/>
                                 </connections>
                             </button>
-                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZOx-tN-3gM">
+                            <button focusRingType="none" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZOx-tN-3gM">
                                 <rect key="frame" x="10" y="68" width="228" height="18"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <buttonCell key="cell" type="check" title="Play notification sounds" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="Eib-Kx-RID">
+                                <buttonCell key="cell" type="check" title="Play notification sounds" bezelStyle="regularSquare" imagePosition="left" state="on" focusRingType="none" inset="2" id="Eib-Kx-RID">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
@@ -85,13 +85,27 @@
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hTH-EF-Ata">
+                                <rect key="frame" x="173" y="13" width="57" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="push" title="Ok" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="8VC-an-Ins">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                    <string key="keyEquivalent" base64-UTF8="YES">
+DQ
+</string>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="ok_button:" target="qdv-kZ-Khq" id="HSH-s6-Lq3"/>
+                                </connections>
+                            </button>
                         </subviews>
                     </view>
                 </viewController>
                 <customObject id="Id3-Lh-mjz" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
                 <userDefaultsController representsSharedInstance="YES" id="ljD-kz-6T4"/>
             </objects>
-            <point key="canvasLocation" x="131" y="-407"/>
+            <point key="canvasLocation" x="88" y="-372"/>
         </scene>
         <!--About-->
         <scene sceneID="bOi-cZ-QRG">
