@@ -190,9 +190,6 @@ DQ
                                     <items>
                                         <menuItem id="64L-3T-Qsp">
                                             <modifierMask key="keyEquivalentModifierMask"/>
-                                            <connections>
-                                                <action selector="kill_task:" target="Voe-Tx-rLC" id="ZpJ-R9-Tj5"/>
-                                            </connections>
                                         </menuItem>
                                         <menuItem isSeparatorItem="YES" id="uvh-Yx-GSS"/>
                                         <menuItem title="Preferences" id="BOF-NM-1cW">

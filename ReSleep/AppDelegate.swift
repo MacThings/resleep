@@ -29,13 +29,13 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     func startTimer() {
         self.menu_countdown.isEnabled = true
         self.menu_countdown.isHidden = false
+        UserDefaults.standard.set(true, forKey: "Running")
         countdownTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(updateTime), userInfo: nil, repeats: true)
         RunLoop.main.add(countdownTimer!, forMode: .common)
     }
     
     
     @objc func updateTime() {
-        UserDefaults.standard.set(true, forKey: "Running")
         let myMenu = self.menu_countdown
         myMenu!.title = "⏱️ " + "\(timeFormatted(totalTime))"
         if totalTime != 0 {
@@ -182,6 +182,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
                 if sound_check == true {
                 playSoundNotify()
                 }
+            } else {
+                kill_task((Any).self)
             }
         }
     }
@@ -192,7 +194,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
 
     
-    @IBAction func kill_task(_ sender: Any) {
+    func kill_task(_ sender: Any) {
         let sound_check = UserDefaults.standard.bool(forKey: "Sound")
         if sound_check == true {
         playSoundStop()
