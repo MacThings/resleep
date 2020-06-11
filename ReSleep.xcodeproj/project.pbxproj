@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		2A4AF169231450C600EDB9E4 /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4AF168231450C600EDB9E4 /* Preferences.swift */; };
-		2A6A626B23718190006F346C /* logo_dark_28.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2AA45B212370BDF200DDB265 /* logo_dark_28.png */; };
 		2A6A62722371852B006F346C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCC6C4DF19A58C7A0063EC3C /* Main.storyboard */; };
 		2A6A6273237185B9006F346C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCC6C4DD19A58C7A0063EC3C /* Images.xcassets */; };
 		2A891D34249010AE0084F523 /* ShellOut in Frameworks */ = {isa = PBXBuildFile; productRef = 2A891D33249010AE0084F523 /* ShellOut */; };
 		2A891D372490253C0084F523 /* LoginServiceKit in Frameworks */ = {isa = PBXBuildFile; productRef = 2A891D362490253C0084F523 /* LoginServiceKit */; };
-		2AF688FF248FA2B200221D02 /* logo_28.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2AF688FC248FA1C000221D02 /* logo_28.png */; };
+		2AC4B0DA24921BB100EE6AA4 /* notification.mp3 in Copy Sounds */ = {isa = PBXBuildFile; fileRef = 2AFA895A2490C51900FA3E86 /* notification.mp3 */; };
+		2AC4B0DB24921BB100EE6AA4 /* stop.mp3 in Copy Sounds */ = {isa = PBXBuildFile; fileRef = 2AFA895D2490C76B00FA3E86 /* stop.mp3 */; };
 		2AFA895C2490C52200FA3E86 /* notification.mp3 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2AFA895A2490C51900FA3E86 /* notification.mp3 */; };
 		2AFA895F2490C7AD00FA3E86 /* stop.mp3 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2AFA895D2490C76B00FA3E86 /* stop.mp3 */; };
 		2AFA89612490ED1E00FA3E86 /* About.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFA89602490ED1E00FA3E86 /* About.swift */; };
@@ -31,9 +31,19 @@
 			files = (
 				2AFA895F2490C7AD00FA3E86 /* stop.mp3 in CopyFiles */,
 				2AFA895C2490C52200FA3E86 /* notification.mp3 in CopyFiles */,
-				2AF688FF248FA2B200221D02 /* logo_28.png in CopyFiles */,
-				2A6A626B23718190006F346C /* logo_dark_28.png in CopyFiles */,
 			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2AC4B0D924921B9D00EE6AA4 /* Copy Sounds */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = sounds;
+			dstSubfolderSpec = 7;
+			files = (
+				2AC4B0DA24921BB100EE6AA4 /* notification.mp3 in Copy Sounds */,
+				2AC4B0DB24921BB100EE6AA4 /* stop.mp3 in Copy Sounds */,
+			);
+			name = "Copy Sounds";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -43,9 +53,7 @@
 		14B2056DDCFDC27D3A96D38F /* Pods-Hackintosh-Forum.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hackintosh-Forum.release.xcconfig"; path = "Target Support Files/Pods-Hackintosh-Forum/Pods-Hackintosh-Forum.release.xcconfig"; sourceTree = "<group>"; };
 		2A4AF168231450C600EDB9E4 /* Preferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preferences.swift; sourceTree = "<group>"; };
 		2A6FAAC923169CFF002E6BA2 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Main.strings; sourceTree = "<group>"; };
-		2AA45B212370BDF200DDB265 /* logo_dark_28.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_dark_28.png; sourceTree = "<group>"; };
 		2AC08F7B23706FE100FAD128 /* resleep.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = resleep.html; sourceTree = "<group>"; };
-		2AF688FC248FA1C000221D02 /* logo_28.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_28.png; sourceTree = "<group>"; };
 		2AF688FE248FA27600221D02 /* ReSleep.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ReSleep.entitlements; sourceTree = "<group>"; };
 		2AFA895A2490C51900FA3E86 /* notification.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = notification.mp3; sourceTree = "<group>"; };
 		2AFA895D2490C76B00FA3E86 /* stop.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = stop.mp3; sourceTree = "<group>"; };
@@ -75,6 +83,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2AC4B0D824921B6900EE6AA4 /* sounds */ = {
+			isa = PBXGroup;
+			children = (
+				2AFA895A2490C51900FA3E86 /* notification.mp3 */,
+				2AFA895D2490C76B00FA3E86 /* stop.mp3 */,
+			);
+			path = sounds;
+			sourceTree = "<group>";
+		};
 		8D6B54BBB6B9D785E65A868A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -115,10 +132,7 @@
 		FCC6C4D419A58C7A0063EC3C /* ReSleep */ = {
 			isa = PBXGroup;
 			children = (
-				2AFA895A2490C51900FA3E86 /* notification.mp3 */,
-				2AFA895D2490C76B00FA3E86 /* stop.mp3 */,
-				2AF688FC248FA1C000221D02 /* logo_28.png */,
-				2AA45B212370BDF200DDB265 /* logo_dark_28.png */,
+				2AC4B0D824921B6900EE6AA4 /* sounds */,
 				2AFA89602490ED1E00FA3E86 /* About.swift */,
 				FCC6C4DB19A58C7A0063EC3C /* AppDelegate.swift */,
 				2A4AF168231450C600EDB9E4 /* Preferences.swift */,
@@ -152,6 +166,7 @@
 				FCC6C4CF19A58C7A0063EC3C /* Frameworks */,
 				FCC6C4D019A58C7A0063EC3C /* Resources */,
 				2A6A626923718183006F346C /* CopyFiles */,
+				2AC4B0D924921B9D00EE6AA4 /* Copy Sounds */,
 				2A4AF16B2314684300EDB9E4 /* Copy Helper */,
 				FFD61DF9FE577EA3453563C1 /* [CP] Embed Pods Frameworks */,
 			);
@@ -419,7 +434,7 @@
 				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = 4ATFWV7M4B;
 				ENABLE_HARDENED_RUNTIME = NO;
 				INFOPLIST_FILE = ReSleep/Info.plist;
@@ -428,7 +443,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				MARKETING_VERSION = 1.0.1;
+				MARKETING_VERSION = 1.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = resleep.slsoft.de;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -447,7 +462,7 @@
 				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = 4ATFWV7M4B;
 				ENABLE_HARDENED_RUNTIME = NO;
 				INFOPLIST_FILE = ReSleep/Info.plist;
@@ -456,7 +471,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				MARKETING_VERSION = 1.0.1;
+				MARKETING_VERSION = 1.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = resleep.slsoft.de;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";

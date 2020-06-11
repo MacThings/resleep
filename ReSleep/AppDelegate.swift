@@ -94,11 +94,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         if countdown_check == nil{
             UserDefaults.standard.set("90", forKey: "TimeInfinite")
         }
-        
-        let init_check = UserDefaults.standard.string(forKey: "TimeInit")
-        if init_check == nil{
-            UserDefaults.standard.set("5", forKey: "TimeInit")
-        }
 
         let immediately = UserDefaults.standard.string(forKey: "Immediately")
         if immediately == nil{
@@ -121,24 +116,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             NSApp.terminate(nil)
             return
         }
-       
-        enum InterfaceStyle : String {
-           case Dark, Light
-
-           init() {
-              let type = UserDefaults.standard.string(forKey: "AppleInterfaceStyle") ?? "Light"
-              self = InterfaceStyle(rawValue: type)!
-            }
-        }
-
-        let currentStyle = InterfaceStyle()
         
-        if currentStyle.rawValue == "Light"{
-            button.image = NSImage(named: "logo_28")
-        } else{
-            button.image = NSImage(named: "logo_dark_28")
-        }
-        
+        button.image = NSImage(named: "logo")
         button.target = self
         button.action = #selector(self.detect_mouse_button(sender:))
         button.sendAction(on: [.leftMouseUp, .rightMouseUp])
@@ -170,25 +149,39 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
     
     @objc func detect_mouse_button(sender: NSStatusItem) {
+
         let event = NSApp.currentEvent!
 
         if event.type == NSEvent.EventType.rightMouseUp{
+            // Right Mouseclick
             self.displayMenu()
         } else {
+            // Left Mouseclick
+            guard let button = statusItem?.button else {
+                print("Status bar item failed. Try removing some menu bar item.")
+                NSApp.terminate(nil)
+                return
+            }
             let run_check = UserDefaults.standard.bool(forKey: "Running")
             if run_check == false {
+                button.image = NSImage(named: "logo_running")
                 self.startTimer()
                 let sound_check = UserDefaults.standard.bool(forKey: "Sound")
                 if sound_check == true {
                 playSoundNotify()
                 }
             } else {
+                guard let button = statusItem?.button else {
+                    print("Status bar item failed. Try removing some menu bar item.")
+                    NSApp.terminate(nil)
+                    return
+                }
+                button.image = NSImage(named: "logo")
                 kill_task((Any).self)
             }
         }
     }
-    
-    
+
     @IBAction func quit_menubar(_ sender: Any) {
         NSApplication.shared.terminate(self)
     }
@@ -206,7 +199,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
    
     func playSoundNotify() {
-        let url = Bundle.main.url(forResource: "notification", withExtension: "mp3")!
+        let url = Bundle.main.url(forResource: "sounds/notification", withExtension: "mp3")!
 
         do {
             player = try AVAudioPlayer(contentsOf: url)
@@ -221,7 +214,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
     
     func playSoundStop() {
-        let url = Bundle.main.url(forResource: "stop", withExtension: "mp3")!
+        let url = Bundle.main.url(forResource: "sounds/stop", withExtension: "mp3")!
 
         do {
             player = try AVAudioPlayer(contentsOf: url)
