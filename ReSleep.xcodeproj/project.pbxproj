@@ -14,8 +14,6 @@
 		2A891D372490253C0084F523 /* LoginServiceKit in Frameworks */ = {isa = PBXBuildFile; productRef = 2A891D362490253C0084F523 /* LoginServiceKit */; };
 		2AC4B0DA24921BB100EE6AA4 /* notification.mp3 in Copy Sounds */ = {isa = PBXBuildFile; fileRef = 2AFA895A2490C51900FA3E86 /* notification.mp3 */; };
 		2AC4B0DB24921BB100EE6AA4 /* stop.mp3 in Copy Sounds */ = {isa = PBXBuildFile; fileRef = 2AFA895D2490C76B00FA3E86 /* stop.mp3 */; };
-		2AFA895C2490C52200FA3E86 /* notification.mp3 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2AFA895A2490C51900FA3E86 /* notification.mp3 */; };
-		2AFA895F2490C7AD00FA3E86 /* stop.mp3 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2AFA895D2490C76B00FA3E86 /* stop.mp3 */; };
 		2AFA89612490ED1E00FA3E86 /* About.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFA89602490ED1E00FA3E86 /* About.swift */; };
 		2C0156E52269E1E9615B66DA /* Pods_ReSleep.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5A154C5FFF62EFB84BBC82D /* Pods_ReSleep.framework */; };
 		FCC6C4D819A58C7A0063EC3C /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC6C4D719A58C7A0063EC3C /* main.swift */; };
@@ -23,17 +21,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		2A6A626923718183006F346C /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 7;
-			files = (
-				2AFA895F2490C7AD00FA3E86 /* stop.mp3 in CopyFiles */,
-				2AFA895C2490C52200FA3E86 /* notification.mp3 in CopyFiles */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		2AC4B0D924921B9D00EE6AA4 /* Copy Sounds */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -165,10 +152,9 @@
 				FCC6C4CE19A58C7A0063EC3C /* Sources */,
 				FCC6C4CF19A58C7A0063EC3C /* Frameworks */,
 				FCC6C4D019A58C7A0063EC3C /* Resources */,
-				2A6A626923718183006F346C /* CopyFiles */,
 				2AC4B0D924921B9D00EE6AA4 /* Copy Sounds */,
-				2A4AF16B2314684300EDB9E4 /* Copy Helper */,
 				FFD61DF9FE577EA3453563C1 /* [CP] Embed Pods Frameworks */,
+				2A4AF16B2314684300EDB9E4 /* Copy Helper */,
 			);
 			buildRules = (
 			);
