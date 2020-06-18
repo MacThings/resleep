@@ -9,7 +9,6 @@
 import Cocoa
 import LoginServiceKit
 import LetsMove
-import ShellOut
 import AVFoundation
 
 class AppDelegate: NSObject, NSApplicationDelegate {
@@ -42,13 +41,12 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             totalTime -= 1
         } else {
             endTimer()
-            do {
-                try shellOut(to: "pmset", arguments: ["sleepnow"])
-                } catch {
-                    let error = error as! ShellOutError
-                    print(error.message)
-                    print(error.output)
-                }
+            
+            let task = Process()
+            task.launchPath = "/usr/bin/pmset"
+            task.arguments = ["sleepnow"]
+            task.launch()
+           
             endTimer()
             totalTime = (UserDefaults.standard.string(forKey: "TimeInfinite")! as NSString).integerValue
             startTimer()
@@ -67,7 +65,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         return String(format: "%02d:%02d", minutes, seconds)
     }
 
-    
     @objc func displayMenu() {
         
         guard let button = statusItem?.button else { return }

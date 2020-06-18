@@ -10,7 +10,6 @@
 		2A4AF169231450C600EDB9E4 /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4AF168231450C600EDB9E4 /* Preferences.swift */; };
 		2A6A62722371852B006F346C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCC6C4DF19A58C7A0063EC3C /* Main.storyboard */; };
 		2A6A6273237185B9006F346C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCC6C4DD19A58C7A0063EC3C /* Images.xcassets */; };
-		2A891D34249010AE0084F523 /* ShellOut in Frameworks */ = {isa = PBXBuildFile; productRef = 2A891D33249010AE0084F523 /* ShellOut */; };
 		2A891D372490253C0084F523 /* LoginServiceKit in Frameworks */ = {isa = PBXBuildFile; productRef = 2A891D362490253C0084F523 /* LoginServiceKit */; };
 		2AC4B0DA24921BB100EE6AA4 /* notification.mp3 in Copy Sounds */ = {isa = PBXBuildFile; fileRef = 2AFA895A2490C51900FA3E86 /* notification.mp3 */; };
 		2AC4B0DB24921BB100EE6AA4 /* stop.mp3 in Copy Sounds */ = {isa = PBXBuildFile; fileRef = 2AFA895D2490C76B00FA3E86 /* stop.mp3 */; };
@@ -61,7 +60,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2A891D34249010AE0084F523 /* ShellOut in Frameworks */,
 				2A891D372490253C0084F523 /* LoginServiceKit in Frameworks */,
 				2C0156E52269E1E9615B66DA /* Pods_ReSleep.framework in Frameworks */,
 			);
@@ -162,7 +160,6 @@
 			);
 			name = ReSleep;
 			packageProductDependencies = (
-				2A891D33249010AE0084F523 /* ShellOut */,
 				2A891D362490253C0084F523 /* LoginServiceKit */,
 			);
 			productName = KUMenuBar;
@@ -195,7 +192,6 @@
 			);
 			mainGroup = FCC6C4C919A58C7A0063EC3C;
 			packageReferences = (
-				2A891D32249010AE0084F523 /* XCRemoteSwiftPackageReference "ShellOut" */,
 				2A891D352490253B0084F523 /* XCRemoteSwiftPackageReference "LoginServiceKit" */,
 			);
 			productRefGroup = FCC6C4D319A58C7A0063EC3C /* Products */;
@@ -490,14 +486,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		2A891D32249010AE0084F523 /* XCRemoteSwiftPackageReference "ShellOut" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/JohnSundell/ShellOut";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 2.3.0;
-			};
-		};
 		2A891D352490253B0084F523 /* XCRemoteSwiftPackageReference "LoginServiceKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Clipy/LoginServiceKit";
@@ -509,11 +497,6 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		2A891D33249010AE0084F523 /* ShellOut */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 2A891D32249010AE0084F523 /* XCRemoteSwiftPackageReference "ShellOut" */;
-			productName = ShellOut;
-		};
 		2A891D362490253C0084F523 /* LoginServiceKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 2A891D352490253B0084F523 /* XCRemoteSwiftPackageReference "LoginServiceKit" */;
