@@ -11,10 +11,11 @@
 		2A6A62722371852B006F346C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCC6C4DF19A58C7A0063EC3C /* Main.storyboard */; };
 		2A6A6273237185B9006F346C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCC6C4DD19A58C7A0063EC3C /* Images.xcassets */; };
 		2A891D372490253C0084F523 /* LoginServiceKit in Frameworks */ = {isa = PBXBuildFile; productRef = 2A891D362490253C0084F523 /* LoginServiceKit */; };
-		2AC4B0DA24921BB100EE6AA4 /* notification.mp3 in Copy Sounds */ = {isa = PBXBuildFile; fileRef = 2AFA895A2490C51900FA3E86 /* notification.mp3 */; };
-		2AC4B0DB24921BB100EE6AA4 /* stop.mp3 in Copy Sounds */ = {isa = PBXBuildFile; fileRef = 2AFA895D2490C76B00FA3E86 /* stop.mp3 */; };
+		2AC4B0DA24921BB100EE6AA4 /* notification.mp3 in Copy Sounds */ = {isa = PBXBuildFile; fileRef = 2AFA895A2490C51900FA3E86 /* notification.mp3 */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		2AC4B0DB24921BB100EE6AA4 /* stop.mp3 in Copy Sounds */ = {isa = PBXBuildFile; fileRef = 2AFA895D2490C76B00FA3E86 /* stop.mp3 */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		2AC63A8725B2E3CF003B9A02 /* Pods_ReSleep.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5A154C5FFF62EFB84BBC82D /* Pods_ReSleep.framework */; };
+		2AC63A8825B2E3CF003B9A02 /* Pods_ReSleep.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F5A154C5FFF62EFB84BBC82D /* Pods_ReSleep.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2AFA89612490ED1E00FA3E86 /* About.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFA89602490ED1E00FA3E86 /* About.swift */; };
-		2C0156E52269E1E9615B66DA /* Pods_ReSleep.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5A154C5FFF62EFB84BBC82D /* Pods_ReSleep.framework */; };
 		FCC6C4D819A58C7A0063EC3C /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC6C4D719A58C7A0063EC3C /* main.swift */; };
 		FCC6C4DC19A58C7A0063EC3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC6C4DB19A58C7A0063EC3C /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
@@ -32,6 +33,17 @@
 			name = "Copy Sounds";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2AC63A8625B2E3CC003B9A02 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				2AC63A8825B2E3CF003B9A02 /* Pods_ReSleep.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +52,7 @@
 		2A4AF168231450C600EDB9E4 /* Preferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preferences.swift; sourceTree = "<group>"; };
 		2A6FAAC923169CFF002E6BA2 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Main.strings; sourceTree = "<group>"; };
 		2AC08F7B23706FE100FAD128 /* resleep.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = resleep.html; sourceTree = "<group>"; };
+		2AC63A8325B2E3CC003B9A02 /* LetsMove.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = LetsMove.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AF688FE248FA27600221D02 /* ReSleep.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ReSleep.entitlements; sourceTree = "<group>"; };
 		2AFA895A2490C51900FA3E86 /* notification.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = notification.mp3; sourceTree = "<group>"; };
 		2AFA895D2490C76B00FA3E86 /* stop.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = stop.mp3; sourceTree = "<group>"; };
@@ -60,8 +73,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2AC63A8725B2E3CF003B9A02 /* Pods_ReSleep.framework in Frameworks */,
 				2A891D372490253C0084F523 /* LoginServiceKit in Frameworks */,
-				2C0156E52269E1E9615B66DA /* Pods_ReSleep.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +93,7 @@
 		8D6B54BBB6B9D785E65A868A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2AC63A8325B2E3CC003B9A02 /* LetsMove.framework */,
 				F5A154C5FFF62EFB84BBC82D /* Pods_ReSleep.framework */,
 			);
 			name = Frameworks;
@@ -153,6 +167,7 @@
 				2AC4B0D924921B9D00EE6AA4 /* Copy Sounds */,
 				FFD61DF9FE577EA3453563C1 /* [CP] Embed Pods Frameworks */,
 				2A4AF16B2314684300EDB9E4 /* Copy Helper */,
+				2AC63A8625B2E3CC003B9A02 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
