@@ -8,7 +8,6 @@
 
 import Cocoa
 import LoginServiceKit
-import LetsMove
 import AVFoundation
 
 class AppDelegate: NSObject, NSApplicationDelegate {
@@ -118,8 +117,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         button.target = self
         button.action = #selector(self.detect_mouse_button(sender:))
         button.sendAction(on: [.leftMouseUp, .rightMouseUp])
-        
-        PFMoveToApplicationsFolderIfNecessary()
         
         let loginitem = UserDefaults.standard.bool(forKey: "Loginitem")
                if loginitem == true {

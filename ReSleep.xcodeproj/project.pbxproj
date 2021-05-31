@@ -11,10 +11,10 @@
 		2A6A62722371852B006F346C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCC6C4DF19A58C7A0063EC3C /* Main.storyboard */; };
 		2A6A6273237185B9006F346C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCC6C4DD19A58C7A0063EC3C /* Images.xcassets */; };
 		2A891D372490253C0084F523 /* LoginServiceKit in Frameworks */ = {isa = PBXBuildFile; productRef = 2A891D362490253C0084F523 /* LoginServiceKit */; };
+		2AAE3120266500070054634E /* Sparkle in Frameworks */ = {isa = PBXBuildFile; productRef = 2AAE311F266500070054634E /* Sparkle */; };
 		2AC4B0DA24921BB100EE6AA4 /* notification.mp3 in Copy Sounds */ = {isa = PBXBuildFile; fileRef = 2AFA895A2490C51900FA3E86 /* notification.mp3 */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		2AC4B0DB24921BB100EE6AA4 /* stop.mp3 in Copy Sounds */ = {isa = PBXBuildFile; fileRef = 2AFA895D2490C76B00FA3E86 /* stop.mp3 */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		2AC63A8725B2E3CF003B9A02 /* Pods_ReSleep.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5A154C5FFF62EFB84BBC82D /* Pods_ReSleep.framework */; };
-		2AC63A8825B2E3CF003B9A02 /* Pods_ReSleep.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F5A154C5FFF62EFB84BBC82D /* Pods_ReSleep.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2AC63A8825B2E3CF003B9A02 /* (null) in Embed Frameworks */ = {isa = PBXBuildFile; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2AFA89612490ED1E00FA3E86 /* About.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFA89602490ED1E00FA3E86 /* About.swift */; };
 		FCC6C4D819A58C7A0063EC3C /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC6C4D719A58C7A0063EC3C /* main.swift */; };
 		FCC6C4DC19A58C7A0063EC3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC6C4DB19A58C7A0063EC3C /* AppDelegate.swift */; };
@@ -39,7 +39,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				2AC63A8825B2E3CF003B9A02 /* Pods_ReSleep.framework in Embed Frameworks */,
+				2AC63A8825B2E3CF003B9A02 /* (null) in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -47,8 +47,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		07021DC2B0E5FD5B3CFE9154 /* Pods-ReSleep.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReSleep.debug.xcconfig"; path = "Target Support Files/Pods-ReSleep/Pods-ReSleep.debug.xcconfig"; sourceTree = "<group>"; };
-		14B2056DDCFDC27D3A96D38F /* Pods-Hackintosh-Forum.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hackintosh-Forum.release.xcconfig"; path = "Target Support Files/Pods-Hackintosh-Forum/Pods-Hackintosh-Forum.release.xcconfig"; sourceTree = "<group>"; };
 		2A4AF168231450C600EDB9E4 /* Preferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preferences.swift; sourceTree = "<group>"; };
 		2A6FAAC923169CFF002E6BA2 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Main.strings; sourceTree = "<group>"; };
 		2AC08F7B23706FE100FAD128 /* resleep.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = resleep.html; sourceTree = "<group>"; };
@@ -57,9 +55,6 @@
 		2AFA895A2490C51900FA3E86 /* notification.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = notification.mp3; sourceTree = "<group>"; };
 		2AFA895D2490C76B00FA3E86 /* stop.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = stop.mp3; sourceTree = "<group>"; };
 		2AFA89602490ED1E00FA3E86 /* About.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = About.swift; sourceTree = "<group>"; };
-		979B348FABF2D028DAF962B6 /* Pods-Hackintosh-Forum.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hackintosh-Forum.debug.xcconfig"; path = "Target Support Files/Pods-Hackintosh-Forum/Pods-Hackintosh-Forum.debug.xcconfig"; sourceTree = "<group>"; };
-		DC338E7856D2453723B865D7 /* Pods-ReSleep.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReSleep.release.xcconfig"; path = "Target Support Files/Pods-ReSleep/Pods-ReSleep.release.xcconfig"; sourceTree = "<group>"; };
-		F5A154C5FFF62EFB84BBC82D /* Pods_ReSleep.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReSleep.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCC6C4D219A58C7A0063EC3C /* ReSleep.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReSleep.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCC6C4D619A58C7A0063EC3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FCC6C4D719A58C7A0063EC3C /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
@@ -73,8 +68,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2AC63A8725B2E3CF003B9A02 /* Pods_ReSleep.framework in Frameworks */,
 				2A891D372490253C0084F523 /* LoginServiceKit in Frameworks */,
+				2AAE3120266500070054634E /* Sparkle in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,20 +89,8 @@
 			isa = PBXGroup;
 			children = (
 				2AC63A8325B2E3CC003B9A02 /* LetsMove.framework */,
-				F5A154C5FFF62EFB84BBC82D /* Pods_ReSleep.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		D7C29D3102C7E7FBF9D05A48 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				979B348FABF2D028DAF962B6 /* Pods-Hackintosh-Forum.debug.xcconfig */,
-				14B2056DDCFDC27D3A96D38F /* Pods-Hackintosh-Forum.release.xcconfig */,
-				07021DC2B0E5FD5B3CFE9154 /* Pods-ReSleep.debug.xcconfig */,
-				DC338E7856D2453723B865D7 /* Pods-ReSleep.release.xcconfig */,
-			);
-			path = Pods;
 			sourceTree = "<group>";
 		};
 		FCC6C4C919A58C7A0063EC3C = {
@@ -115,7 +98,6 @@
 			children = (
 				FCC6C4D419A58C7A0063EC3C /* ReSleep */,
 				FCC6C4D319A58C7A0063EC3C /* Products */,
-				D7C29D3102C7E7FBF9D05A48 /* Pods */,
 				8D6B54BBB6B9D785E65A868A /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -160,14 +142,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FCC6C4F019A58C7A0063EC3C /* Build configuration list for PBXNativeTarget "ReSleep" */;
 			buildPhases = (
-				1EEBC13657719C920225EB9B /* [CP] Check Pods Manifest.lock */,
 				FCC6C4CE19A58C7A0063EC3C /* Sources */,
 				FCC6C4CF19A58C7A0063EC3C /* Frameworks */,
 				FCC6C4D019A58C7A0063EC3C /* Resources */,
 				2AC4B0D924921B9D00EE6AA4 /* Copy Sounds */,
-				FFD61DF9FE577EA3453563C1 /* [CP] Embed Pods Frameworks */,
 				2A4AF16B2314684300EDB9E4 /* Copy Helper */,
 				2AC63A8625B2E3CC003B9A02 /* Embed Frameworks */,
+				2AAE31212665005A0054634E /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -176,6 +157,7 @@
 			name = ReSleep;
 			packageProductDependencies = (
 				2A891D362490253C0084F523 /* LoginServiceKit */,
+				2AAE311F266500070054634E /* Sparkle */,
 			);
 			productName = KUMenuBar;
 			productReference = FCC6C4D219A58C7A0063EC3C /* ReSleep.app */;
@@ -208,6 +190,7 @@
 			mainGroup = FCC6C4C919A58C7A0063EC3C;
 			packageReferences = (
 				2A891D352490253B0084F523 /* XCRemoteSwiftPackageReference "LoginServiceKit" */,
+				2AAE311E266500070054634E /* XCRemoteSwiftPackageReference "Sparkle" */,
 			);
 			productRefGroup = FCC6C4D319A58C7A0063EC3C /* Products */;
 			projectDirPath = "";
@@ -231,28 +214,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1EEBC13657719C920225EB9B /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ReSleep-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		2A4AF16B2314684300EDB9E4 /* Copy Helper */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -271,22 +232,22 @@
 			shellPath = /bin/bash;
 			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nrm -r /Applications/ReSleep.app\ncp -r \"${TARGET_BUILD_DIR}\"/ReSleep.app /Applications/\nif [ -d /Volumes/Homeshare/Xcode/resleep ]; then\ncp \"/Users/luigi/Documents/Xcode/resleep/ReSleep/resleep.html\" \"/Volumes/Homeshare/Xcode/resleep/upload/resleep.html\"\nrm /Volumes/Homeshare/Xcode/resleep/upload/resleep.zip 2> /dev/null\ncd /Applications\nditto -c -k --sequesterRsrc --keepParent ReSleep.app /Volumes/Homeshare/Xcode/resleep/upload/resleep.zip\nfi\n";
 		};
-		FFD61DF9FE577EA3453563C1 /* [CP] Embed Pods Frameworks */ = {
+		2AAE31212665005A0054634E /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ReSleep/Pods-ReSleep-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			name = "[CP] Embed Pods Frameworks";
+			inputPaths = (
+			);
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ReSleep/Pods-ReSleep-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ReSleep/Pods-ReSleep-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nrm -r /Applications/ReSleep.app\ncp -r \"${TARGET_BUILD_DIR}\"/ReSleep.app /Applications/\nif [ -d /Volumes/Homeshare/Xcode/resleep ]; then\ncp \"/Users/luigi/Documents/Xcode/resleep/ReSleep/resleep.html\" \"/Volumes/Homeshare/Xcode/resleep/upload/resleep.html\"\nrm /Volumes/Homeshare/Xcode/resleep/upload/resleep.zip 2> /dev/null\ncd /Applications\nditto -c -k --sequesterRsrc --keepParent ReSleep.app /Volumes/Homeshare/Xcode/resleep/upload/resleep.zip\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -423,16 +384,15 @@
 		};
 		FCC6C4F119A58C7A0063EC3C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 07021DC2B0E5FD5B3CFE9154 /* Pods-ReSleep.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = ReSleep/ReSleep.entitlements;
-				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = YES;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 4;
-				DEVELOPMENT_TEAM = 4ATFWV7M4B;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = NO;
 				INFOPLIST_FILE = ReSleep/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -450,16 +410,15 @@
 		};
 		FCC6C4F219A58C7A0063EC3C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DC338E7856D2453723B865D7 /* Pods-ReSleep.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = ReSleep/ReSleep.entitlements;
-				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = YES;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 4;
-				DEVELOPMENT_TEAM = 4ATFWV7M4B;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = NO;
 				INFOPLIST_FILE = ReSleep/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -507,6 +466,14 @@
 				minimumVersion = 2.2.0;
 			};
 		};
+		2AAE311E266500070054634E /* XCRemoteSwiftPackageReference "Sparkle" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sparkle-project/Sparkle";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.26.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -514,6 +481,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 2A891D352490253B0084F523 /* XCRemoteSwiftPackageReference "LoginServiceKit" */;
 			productName = LoginServiceKit;
+		};
+		2AAE311F266500070054634E /* Sparkle */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2AAE311E266500070054634E /* XCRemoteSwiftPackageReference "Sparkle" */;
+			productName = Sparkle;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
