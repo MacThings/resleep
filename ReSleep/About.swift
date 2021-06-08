@@ -9,8 +9,7 @@
 import Cocoa
 
 class About: NSViewController {
-  
-    
+      
     @IBOutlet weak var label_copyright: NSTextField!
     @IBOutlet weak var label_version: NSTextField!
     

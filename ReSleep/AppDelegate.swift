@@ -132,6 +132,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             startTimer()
         }
         
+        LetsMoveIt().ToApps()
+        
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {

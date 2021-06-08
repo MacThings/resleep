@@ -11,9 +11,11 @@
 		2A6A62722371852B006F346C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCC6C4DF19A58C7A0063EC3C /* Main.storyboard */; };
 		2A6A6273237185B9006F346C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCC6C4DD19A58C7A0063EC3C /* Images.xcassets */; };
 		2A891D372490253C0084F523 /* LoginServiceKit in Frameworks */ = {isa = PBXBuildFile; productRef = 2A891D362490253C0084F523 /* LoginServiceKit */; };
+		2A9A632B266FAB7C00257DE0 /* LetsMoveIt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9A632A266FAB7C00257DE0 /* LetsMoveIt.swift */; };
+		2A9A6334266FAC8300257DE0 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2A9A6332266FAC8300257DE0 /* Localizable.strings */; };
 		2AAE3120266500070054634E /* Sparkle in Frameworks */ = {isa = PBXBuildFile; productRef = 2AAE311F266500070054634E /* Sparkle */; };
-		2AC4B0DA24921BB100EE6AA4 /* notification.mp3 in Copy Sounds */ = {isa = PBXBuildFile; fileRef = 2AFA895A2490C51900FA3E86 /* notification.mp3 */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		2AC4B0DB24921BB100EE6AA4 /* stop.mp3 in Copy Sounds */ = {isa = PBXBuildFile; fileRef = 2AFA895D2490C76B00FA3E86 /* stop.mp3 */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		2AC4B0DA24921BB100EE6AA4 /* notification.mp3 in Copy Sounds */ = {isa = PBXBuildFile; fileRef = 2AFA895A2490C51900FA3E86 /* notification.mp3 */; };
+		2AC4B0DB24921BB100EE6AA4 /* stop.mp3 in Copy Sounds */ = {isa = PBXBuildFile; fileRef = 2AFA895D2490C76B00FA3E86 /* stop.mp3 */; };
 		2AFA89612490ED1E00FA3E86 /* About.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFA89602490ED1E00FA3E86 /* About.swift */; };
 		FCC6C4D819A58C7A0063EC3C /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC6C4D719A58C7A0063EC3C /* main.swift */; };
 		FCC6C4DC19A58C7A0063EC3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC6C4DB19A58C7A0063EC3C /* AppDelegate.swift */; };
@@ -37,6 +39,8 @@
 /* Begin PBXFileReference section */
 		2A4AF168231450C600EDB9E4 /* Preferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preferences.swift; sourceTree = "<group>"; };
 		2A6FAAC923169CFF002E6BA2 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Main.strings; sourceTree = "<group>"; };
+		2A9A632A266FAB7C00257DE0 /* LetsMoveIt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LetsMoveIt.swift; sourceTree = "<group>"; };
+		2A9A6333266FAC8300257DE0 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
 		2AC08F7B23706FE100FAD128 /* resleep.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = resleep.html; sourceTree = "<group>"; };
 		2AF688FE248FA27600221D02 /* ReSleep.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ReSleep.entitlements; sourceTree = "<group>"; };
 		2AFA895A2490C51900FA3E86 /* notification.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = notification.mp3; sourceTree = "<group>"; };
@@ -95,6 +99,7 @@
 				2AFA89602490ED1E00FA3E86 /* About.swift */,
 				FCC6C4DB19A58C7A0063EC3C /* AppDelegate.swift */,
 				2A4AF168231450C600EDB9E4 /* Preferences.swift */,
+				2A9A632A266FAB7C00257DE0 /* LetsMoveIt.swift */,
 				FCC6C4DD19A58C7A0063EC3C /* Images.xcassets */,
 				FCC6C4DF19A58C7A0063EC3C /* Main.storyboard */,
 				2AC08F7B23706FE100FAD128 /* resleep.html */,
@@ -108,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				FCC6C4D619A58C7A0063EC3C /* Info.plist */,
+				2A9A6332266FAC8300257DE0 /* Localizable.strings */,
 				FCC6C4D719A58C7A0063EC3C /* main.swift */,
 			);
 			name = "Supporting Files";
@@ -183,6 +189,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A6A6273237185B9006F346C /* Images.xcassets in Resources */,
+				2A9A6334266FAC8300257DE0 /* Localizable.strings in Resources */,
 				2A6A62722371852B006F346C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -206,7 +213,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/bash;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nrm -r /Applications/ReSleep.app\nrm -r \"${TARGET_BUILD_DIR}\"/ReSleep.app/Contents/Resources/sounds/Sparkle.framework\ncp -r \"${TARGET_BUILD_DIR}\"/ReSleep.app /Applications/\nif [ -d /Volumes/Homeshare/Xcode/resleep ]; then\ncp \"/Users/luigi/Documents/Xcode/resleep/ReSleep/resleep.html\" \"/Volumes/Homeshare/Xcode/resleep/upload/resleep.html\"\nrm /Volumes/Homeshare/Xcode/resleep/upload/resleep.zip 2> /dev/null\ncd /Applications\nditto -c -k --sequesterRsrc --keepParent ReSleep.app /Volumes/Homeshare/Xcode/resleep/upload/resleep.zip\nfi\n";
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nfind \"${TARGET_BUILD_DIR}\"/\"${PRODUCT_NAME}.app\"/Contents/Resources -type d -name \"Sparkle.framework\" -exec rm -r \"{}\" \\;\nrm -r /Applications/\"${PRODUCT_NAME}.app\"\ncp -r \"${TARGET_BUILD_DIR}\"/\"${PRODUCT_NAME}.app\" /Applications/\nif [ -d /Volumes/Homeshare/Xcode/$newname ]; then\n    newname=$( echo \"${PRODUCT_NAME}\" |tr '[:upper:]' '[:lower:]' |sed -e 's/\\ //g' -e 's/-//g' )\n    cp \"/Users/luigi/Documents/Xcode/$newname/\"${PRODUCT_NAME}\"/$newname.html\" \"/Volumes/Homeshare/Xcode/$newname/upload/$newname.html\"\n    rm /Volumes/Homeshare/Xcode/$newname/upload/$newname.zip 2> /dev/null\n    cd /Applications\n    ditto -c -k --sequesterRsrc --keepParent \"${PRODUCT_NAME}.app\" /Volumes/Homeshare/Xcode/$newname/upload/$newname.zip\n    ditto -c -k --sequesterRsrc --keepParent \"${PRODUCT_NAME}.app\" ~/Desktop/\"${PRODUCT_NAME} ${MARKETING_VERSION}.zip\"\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -217,6 +224,7 @@
 			files = (
 				FCC6C4DC19A58C7A0063EC3C /* AppDelegate.swift in Sources */,
 				2AFA89612490ED1E00FA3E86 /* About.swift in Sources */,
+				2A9A632B266FAB7C00257DE0 /* LetsMoveIt.swift in Sources */,
 				2A4AF169231450C600EDB9E4 /* Preferences.swift in Sources */,
 				FCC6C4D819A58C7A0063EC3C /* main.swift in Sources */,
 			);
@@ -225,6 +233,14 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		2A9A6332266FAC8300257DE0 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2A9A6333266FAC8300257DE0 /* de */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		FCC6C4DF19A58C7A0063EC3C /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -265,7 +281,7 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -320,7 +336,7 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "";
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -346,8 +362,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = ReSleep/ReSleep.entitlements;
-				CODE_SIGN_IDENTITY = "-";
-				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = YES;
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 4;
@@ -372,8 +387,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = ReSleep/ReSleep.entitlements;
-				CODE_SIGN_IDENTITY = "-";
-				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = YES;
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 4;

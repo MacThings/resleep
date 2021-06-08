@@ -25,6 +25,9 @@
 /* Class = "NSViewController"; title = "About"; ObjectID = "CZh-37-pW4"; */
 "CZh-37-pW4.title" = "Über";
 
+/* Class = "NSButtonCell"; title = "Immediate sleep on app launch"; ObjectID = "DhZ-0g-Faa"; */
+"DhZ-0g-Faa.title" = "Nach Programmstart sofort schlafen";
+
 /* Class = "NSButtonCell"; title = "Play notification sounds"; ObjectID = "Eib-Kx-RID"; */
 "Eib-Kx-RID.title" = "Hinweistöne";
 
@@ -51,8 +54,4 @@
 
 /* Class = "NSMenu"; title = "ReSleep"; ObjectID = "uQy-DD-JDr"; */
 "uQy-DD-JDr.title" = "Hackintosh-Forum";
-
-/* Class = "NSTextFieldCell"; title = "Immediate sleep on app launch"; ObjectID = "DhZ-0g-Faa"; */
-"DhZ-0g-Faa.title" = "Nach Programmstart sofort schlafen";
-
 
